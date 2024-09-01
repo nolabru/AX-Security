@@ -1,0 +1,39 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+/* Variáveis */
+:root{
+    --cor1: #1E73BE;
+    --cor2: #35DAB3;
+    --cor3: #3E3E3E;
+    --cor4: #828282;
+    --cor5: #e9e9e9;
+    --fonte: "Poppins", sans-serif;
+}   
+
+/* Geral */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--fonte);
+}
+
+/* Barra de Rolagem */
+::-webkit-scrollbar{
+    width: 3px;    
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: linear-gradient(to bottom, transparent, var(--cor1), var(--cor2));
+}
+
+/* Scroll Suave */
+html{
+    scroll-behavior: smooth;
+}

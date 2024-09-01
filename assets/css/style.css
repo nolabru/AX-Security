@@ -1,0 +1,118 @@
+@import url(global.css);
+
+#sctOne{
+    width: 100%;
+    height: 650px;
+    padding: 50px 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+    background: linear-gradient(90deg, #1e73becf,#35dab4c1), 
+    url(/assets/img/banners/bannerAx.jpg);
+    background-size: cover;
+}
+
+#navBar{
+    width: 100%;
+    height: 55px;  
+    padding: 0px 0px 0px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#axLogo{
+    height: 100%;
+}
+
+#navBarLinks{
+    display: flex;
+    align-items: center;
+}
+
+.navLink{
+    padding: 0px 45px 0px 0px;
+}
+
+.navLink a{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--cor5);
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.navLink a:hover{
+    color: #fff;
+}
+
+.navLink a::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background: linear-gradient(90deg, #fff, var(--cor1));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s ease-in-out;
+}
+
+.navLink a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#navBtn{
+    width: 170px;
+    height: 32px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+#navBtn a{
+    font-size: 12px;
+    color: #fff;
+}
+
+#boasVindas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boasVindas h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+}  
+
+#boasVindas h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#btnBv{
+    border: 1px solid;
+    border-image: linear-gradient(90deg, var(--cor2), var(--cor1));
+    border-image-slice: 1;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 40px;
+    padding: 10px 30px;
+}
+
+.iconsRs{
+    margin: 0px 10px;
+    width:22px;
+    fill: var(--cor5);
+}
