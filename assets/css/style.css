@@ -54,7 +54,7 @@
     position: absolute;
     left: 0;
     bottom: -3px;
-    background: linear-gradient(90deg, #fff, var(--cor1));
+    background: linear-gradient(90deg, transparent, #fff);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
@@ -115,8 +115,17 @@
     margin: 0px 10px;
     width:22px;
     fill: var(--cor5);
+    transition: all .3s ease-in;
 }
 
-.iconsRs:hover{
-    background: red;
+.iconsRs:hover{transform: translateY(-5px);}
+
+.iconsRs.f:hover{fill: #2973BA;}
+.iconsRs.i:hover{fill: #E03173;}
+.iconsRs.w:hover{fill: #5AF472;}
+
+#infoOne{
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(90deg, #23262dcc, #23262dcc), url(/AX-Security/assets/img/geral/fxInfos.png);
 }
