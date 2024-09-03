@@ -1,5 +1,7 @@
 @import url(global.css);
 
+/* Seção 1 ------------------------------------------------------------------ */
+
 #sctOne{
     width: 100%;
     height: 650px;
@@ -13,6 +15,8 @@
     background-attachment: fixed;
     background-size: cover;
 }
+
+/* Barra de Navegação --------------------------------------------- */
 
 #navBar{
     width: 100%;
@@ -80,12 +84,24 @@
     background: transparent;
     border: 1px solid #fff;
     border-radius: 2px;
+    transition: all .5s ease-in-out;
+}
+
+#navBtn:hover{
+    background: #fff;
 }
 
 #navBtn a{
     font-size: 12px;
     color: #fff;
+    transition: all .5s ease-in-out;
 }
+
+#navBtn:hover a{
+    color: var(--cor3);
+}
+
+/* Boas Vindas --------------------------------------------- */
 
 #boasVindas{
     display: flex;
@@ -110,11 +126,20 @@
     border: 1px solid;
     border-image: linear-gradient(90deg, var(--cor2), var(--cor1));
     border-image-slice: 1;
-    border-radius: 5px;
     color: #fff;
     margin-top: 40px;
     padding: 10px 30px;
+    transition: all .4s ease-in-out;
 }
+
+#btnBv:hover{
+    transform: translateY(5px);
+    border: 1px solid #fff;
+    background: #fff;
+    color: var(--cor3);
+}
+
+/* Ícones Redes Sociais --------------------------------------------- */
 
 .iconsRs{
     margin: 0px 10px;
@@ -128,6 +153,8 @@
 .iconsRs.f:hover{fill: #2973BA;}
 .iconsRs.i:hover{fill: #E03173;}
 .iconsRs.w:hover{fill: #5AF472;}
+
+/* Faixa Informações ------------------------------------------------------------------ */
 
 #infoOne{
     width: 100%;
@@ -145,6 +172,8 @@
     text-transform: uppercase;
 }
 
+/* Seção Dois ------------------------------------------------------------------ */
+
 #sctTwo{
     width: 100%;
     height: 552px;
@@ -155,13 +184,17 @@
     background: var(--cor3);
 }
 
+/* Vídeo --------------------------------------------- */
+
 #techVideo{
-    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    filter: contrast(-2);
+    width: 100%;
+    overflow-x: hidden;
 }
+
+/* Cards Visão --------------------------------------------- */
 
 .cardVisao{
     width: 450px;
@@ -192,8 +225,57 @@
     font-weight: 300;
 }
 
+/* Seção Três ------------------------------------------------------------------ */
+
 #sctThree{
     width: 100%;
     height: 725px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     background: var(--cor2);
+}
+
+.cardImg{
+    width: 63px;
+    height: 68px;
+    border: 1px solid red;  
+}
+
+.cardImg.se{
+    width: 63px;
+    padding: 4.5px 0px;
+}
+.cardImg.eq{
+    width: 46px;
+    padding: 4.5px 0px;
+}
+.cardImg.es{
+    width: 55px;
+    height: 68px;
+}
+.cardImg.ri{
+    width: 60px;
+    padding: 4.5px 0px;
+}
+
+.cardVtg{
+    width: 290px;
+    height: 370px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #23262d;
+}
+
+.tituloVtg{
+    font-size: 24px;
+    color: var(--cor1);
+    font-weight: 500;
+}
+
+.descricaoVtg{
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
 }
