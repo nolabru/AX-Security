@@ -300,6 +300,7 @@
     display: inline-block;
     position: relative;
     color: var(--cor3);
+    font-size: 24px;
 }
 
 .title::after{
@@ -333,6 +334,54 @@
     border: 1px solid blue;
 }
 
-.svcImg.seg{
-    background: url(/assets/img/serviços/segImg.png);
+.svcImg.seg{background: url(/assets/img/serviços/segImg.png);}
+.svcImg.ala{background: url(/assets/img/serviços/alaImg.png);}
+.svcImg.cer{background: url(/assets/img/serviços/cerImg.png);}
+.svcImg.ist{background: url(/assets/img/serviços/istImg.png);}
+.svcImg.acs{background: url(/assets/img/serviços/acsImg.png);}
+.svcImg.evt{background: url(/assets/img/serviços/evtImg.png);}
+.svcImg.axc{background: url(/assets/img/serviços/axcImg.png);}
+.svcImg.cam{background: url(/assets/img/serviços/camImg.png);}
+
+.svcInfos{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.svcTitle{
+    position: relative;
+    font-weight: 500;
+}
+
+.svcTitle::after{
+    content: '';
+    width: 25%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--cor2), var(--cor1));
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+}
+
+.svcDescricao{
+        font-size: 18px;
+        color: var(--cor4);
+}
+
+.svcBtn{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, var(--cor2), var(--cor1));
+    border-image-slice: 1;
+    color: #000;
+    background: linear-gradient(180deg, var(--cor2), var(--cor1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
