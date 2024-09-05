@@ -301,6 +301,7 @@
     position: relative;
     color: var(--cor3);
     font-size: 24px;
+    font-weight: 500;
 }
 
 .NsTitle::after{
@@ -342,7 +343,7 @@
 .svcImg.cam{background: url(/assets/img/serviços/camImg.png);}
 
 .svcInfos{
-    padding: 20px 30px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -351,14 +352,15 @@
 
 .svcTitle{
     position: relative;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 600;
     color: var(--cor3);
 }
 
 .svcTitle::after{
     content: '';
     width: 25%;
-    height: 1px;
+    height: 2px;
     background: linear-gradient(90deg, var(--cor2), var(--cor1));
     position: absolute;
     left: 0;
@@ -428,17 +430,14 @@
 
 #sctFive{
     width: 100%;
-    height: 610px;
+    height: 700px;
     display: flex;
     padding-top: 90px;
-    border: 1px solid red;
-    background: #d79090;
-    /* #F8F8F8 */
+    background: #F8F8F8;
 }
 
 #sctFive > section{
     width: 50%;
-    border: 1px solid blue;
 }
 
 #empImg{
@@ -450,39 +449,81 @@
 #empDescricao{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    text-align: justify;
-    /* padding: 35px 70px 35px 60px; */
+    justify-content: space-between;
+    padding: 35px 70px 35px 60px;
 }
 
-#empTitle{
+.sctTitle{
     font-size: 24px;
     color: var(--cor3);
     position: relative;
+    font-weight: 500;
 }
 
-#empTitle::after{
+.sctTitle::after{
     content: '';
     position: absolute;
-    width: 10%;
+    width: 11%;
     height: 2px;
     left: 0;
     bottom: 0;
-    background: linear-gradient(90deg, var(--cor4), var(--cor1));
+    background: linear-gradient(90deg, #F8F8F8, var(--cor1));
+    border-radius: 5px;
 }
 
 .empTxt{
     font-size: 15px;
     font-weight: 300;
+    padding: 10px 0px;
     color: var(--cor4);
+    text-align: justify;
 }
 
 .empTxt > span{
     color: var(--cor1);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #empRedesSociais > a > svg{
     fill: var(--cor1);
-    margin: 0px;
+    margin: 0 20px 0 0;
+}
+
+/* Seção Cinco ------------------------------------------------------------------ */
+
+#sctSix{
+    width: 100%;
+    height: 1650px;
+    padding: 110px 38px;
+    border: 1px solid springgreen;
+}
+
+#pdtDescricao{
+    font-size: 16px;
+    color: var(--cor4);
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+#produtos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pdtCard{
+    width: 290px;
+    height: 370px;
+    border: 1px solid orange;
+}
+
+.pdtTitle{
+    font-size: 16px;   
+    font-weight: 700; 
+    color: var(--cor4);
+}
+
+.pdtTitle > span{
+    font-weight: 400;
 }
