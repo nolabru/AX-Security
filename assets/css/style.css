@@ -21,7 +21,7 @@
 #navBar{
     width: 100%;
     height: 55px;  
-    padding: 0px 0px 0px 35px;
+    padding: 0 0 0 35px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +41,7 @@
 }
 
 .navLink{
-    padding: 0px 45px 0px 0px;
+    padding: 0 45px 0 0;
 }
 
 .navLink a{
@@ -77,7 +77,7 @@
 #navBtn{
     width: 170px;
     height: 32px;
-    padding: 0px;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,7 +142,7 @@
 /* Ícones Redes Sociais --------------------------------------------- */
 
 .iconsRs{
-    margin: 0px 10px;
+    margin: 0 10px;
     width:22px;
     fill: var(--cor5);
     transition: all .3s ease-in;
@@ -215,12 +215,12 @@
     text-transform: uppercase;
     font-weight: 400;
     font-size: 28px;
-    padding: 35px 0px 30px 0px;
+    padding: 35px 0 30px 0;
 }
 
 .descricaoCard{
     text-align: center;
-    padding: 0px 35px;
+    padding: 0 35px;
     color: #d5d5d5;
     font-weight: 300;
 }
@@ -242,11 +242,11 @@
 
 .cardImg.se{
     width: 63px;
-    padding: 4.5px 0px;
+    padding: 4.5px 0;
 }
 .cardImg.eq{
     width: 46px;
-    padding: 4.5px 0px;
+    padding: 4.5px 0;
 }
 .cardImg.es{
     width: 55px;
@@ -254,7 +254,7 @@
 }
 .cardImg.ri{
     width: 60px;
-    padding: 4.5px 0px;
+    padding: 4.5px 0;
 }
 
 .cardVtg{
@@ -271,7 +271,7 @@
     font-size: 24px;
     color: var(--cor1);
     font-weight: 500;
-    padding: 35px 0px 40px 0px;
+    padding: 35px 0 40px 0;
 }
 
 .descricaoVtg{
@@ -292,11 +292,11 @@
 #sctFour{
     width: 100%;
     height: 1765px;
-    padding: 40px 38px 0px 38px;
+    padding: 40px 38px 0 38px;
     background: #f8f8f8;
 }
 
-.NsTitle{
+.sctsTitle{
     display: inline-block;
     position: relative;
     color: var(--cor3);
@@ -304,7 +304,7 @@
     font-weight: 500;
 }
 
-.NsTitle::after{
+.sctsTitle::after{
     content: '';
     width: 35%;
     height: 2px;
@@ -368,9 +368,9 @@
 }
 
 .svcDescricao{
-        font-size: 18px;
-        padding-right: 10px;
-        color: var(--cor4);
+    font-size: 18px;
+    padding-right: 10px;
+    color: var(--cor4);
 }
 
 .svcBtn{   
@@ -396,34 +396,39 @@
 
 /* Faixa Informações Dois ------------------------------------------------------------------ */
 
-#infoTwo{
+.info{
     width: 100%;
     height: 270px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(90deg, #ffffffcd, #ffffffcd),
-    url(/assets/img/geral/bgInfoTwo.png);
+}
+
+.info.two{
+    background: #fff;
+    background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
-    background-attachment: fixed;
-}   
+}
 
-#infoTwo a{
-    font-size: 30px;
+.info > a{
+    font-size: 30px;   
+    padding: 20px 100px;
+    transition: all .5s ease-in-out;   
+}
+
+.info.two > a{
     border: 1px solid;
     border-image: linear-gradient(90deg, var(--cor2), var(--cor1));
     border-image-slice: 1;
     background: linear-gradient(90deg, var(--cor2), var(--cor1));
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: all .5s ease-in-out;  
-    padding: 20px 100px;  
 }
 
-#infoTwo a:hover{
+.info.two > a:hover{
     transform: translateY(-10px);
-    box-shadow: 0px 2px 10px #d1d1d1;
+    box-shadow: 0 2px 10px #d1d1d1;    
 }
 
 /* Seção Cinco ------------------------------------------------------------------ */
@@ -440,6 +445,10 @@
     width: 50%;
 }
 
+#sctFive .sctsTitle::after{
+    width: 12%;
+}   
+
 #empImg{
     background: url(/assets/img/geral/axBanner.png);
     background-size: cover;
@@ -453,28 +462,10 @@
     padding: 35px 70px 35px 60px;
 }
 
-.sctTitle{
-    font-size: 24px;
-    color: var(--cor3);
-    position: relative;
-    font-weight: 500;
-}
-
-.sctTitle::after{
-    content: '';
-    position: absolute;
-    width: 11%;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    background: linear-gradient(90deg, #F8F8F8, var(--cor1));
-    border-radius: 5px;
-}
-
 .empTxt{
     font-size: 15px;
     font-weight: 300;
-    padding: 10px 0px;
+    padding: 10px 0;
     color: var(--cor4);
     text-align: justify;
 }
@@ -484,7 +475,7 @@
     font-weight: 600;
 }
 
-#empRedesSociais > a > svg{
+#empRedesSociais > a > svg, #infoRs > a > svg{
     fill: var(--cor1);
     margin: 0 20px 0 0;
 }
@@ -493,9 +484,8 @@
 
 #sctSix{
     width: 100%;
-    height: 1650px;
+    height: 1985px;
     padding: 110px 38px;
-    border: 1px solid springgreen;
 }
 
 #pdtDescricao{
@@ -508,22 +498,131 @@
 #produtos{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-evenly;
+    margin-top: 45px;
 }
 
 .pdtCard{
     width: 290px;
     height: 370px;
-    border: 1px solid orange;
+    padding: 16px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #F6F6F6;
+}
+
+.pdtCard > img{
+    cursor: pointer;
 }
 
 .pdtTitle{
     font-size: 16px;   
     font-weight: 700; 
+    position: relative;
     color: var(--cor4);
 }
 
 .pdtTitle > span{
     font-weight: 400;
 }
+
+.pdtTitle::after{
+    content: "";
+    width: 15%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    background: linear-gradient(90deg, var(--cor2), var(--cor1));
+    border-radius: 5px;
+}
+
+.sda{
+    width: 220px;
+}
+
+.trf{
+    width: 230px;
+}
+
+/* Faixa Informações Três ------------------------------------------------------------------ */
+
+.info.three{
+    background: linear-gradient(90deg, #35dab4bd, #0c3151ac),
+    url(/assets/img/geral/bgInfoTwo.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.info.three > a{
+    border: 1px solid #fff;
+    background: #ffffff18;
+    color: #fff;
+}
+
+.info.three > a:hover{
+    transform: translateY(-10px);
+}
+
+/* Seção Sete ----------------------------------------------------------------------------------*/
+
+#sctSeven{
+    width: 100%;
+    height: 475px;
+    padding: 80px 50px;
+}
+
+#clientes{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cltImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+
+.cltImg.noView{
+    display: none;
+}
+
+/* Faixa Informações Quatro ------------------------------------------------------------------ */
+
+.info.four{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F6F6F6;
+}
+
+#infoRsTitle{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--cor1);
+    text-transform: uppercase;
+}
+
+#infoRsDescricao{
+    font-size: 16px;
+    color: var(--cor4);
+    font-weight: 300;
+    margin-bottom: 22px;
+}
+
+/* Seção Instagram ------------------------------------------------------------------ */
+
+#instagram{
+    width: 100%;
+    height: 500px;
+}
+
+/* Seção Contato ------------------------------------------------------------------ */
+
