@@ -603,14 +603,14 @@
     background: #F6F6F6;
 }
 
-#infoRsTitle{
+.infoRsTitle{
     font-size: 50px;
     font-weight: 400;
     color: var(--cor1);
     text-transform: uppercase;
 }
 
-#infoRsDescricao{
+.infoRsDescricao{
     font-size: 16px;
     color: var(--cor4);
     font-weight: 300;
@@ -626,3 +626,49 @@
 
 /* Seção Contato ------------------------------------------------------------------ */
 
+#infoContato{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+#contato{
+    width: 100%;
+    height: 615px;
+    display: flex;
+    border: 1px solid blue;
+}
+
+#contato > section{
+    width: 50%;
+}
+
+#dadosCtt{
+    background: linear-gradient(90deg, #1e73bec5, #1e73bec5),
+    url(/assets/img/geral/bgInfoTwo.png);
+    padding: 100px 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fdCtt{
+    border: 1px solid green;
+}
+
+.fdCtt > h5{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.fdCtt > p{
+    font-size: 18px;
+    color: #f6f6f6;
+    font-weight: 300;
+}
