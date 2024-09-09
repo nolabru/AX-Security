@@ -550,16 +550,15 @@
 /* Faixa Informações Três ------------------------------------------------------------------ */
 
 .info.three{
-    background: linear-gradient(90deg, #35dab4bd, #0c3151ac),
-    url(/assets/img/geral/bgInfoTwo.png);
+    background: url(/assets/img/geral/infoThreeBg.png);
+    background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    background-position: bottom;
 }
 
 .info.three > a{
     border: 1px solid #fff;
-    background: #ffffff18;
+    background: #ffffff18;  
     color: #fff;
 }
 
@@ -633,14 +632,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
 }
 
 #contato{
     width: 100%;
     height: 615px;
     display: flex;
-    border: 1px solid blue;
 }
 
 #contato > section{
@@ -648,27 +645,94 @@
 }
 
 #dadosCtt{
-    background: linear-gradient(90deg, #1e73bec5, #1e73bec5),
-    url(/assets/img/geral/bgInfoTwo.png);
-    padding: 100px 65px;
+    background: url(/assets/img/geral/cttBg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 85px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.fdCtt{
-    border: 1px solid green;
-}
-
-.fdCtt > h5{
+.cttBfIcon{
     font-size: 20px;
     color: #fff;
     margin-bottom: 10px;
     font-weight: 400;
+    position: relative;
 }
+
+.cttBfIcon::before{
+    content: '';
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: -35px;;
+}
+
+.cttBfIcon.ed::before{background: url(/assets/img/icones/iconMapa.png);}
+.cttBfIcon.tl::before{background: url(/assets/img/icones/iconContato.png);}
+.cttBfIcon.em::before{background: url(/assets/img/icones/iconEmail.png);top: 3px;}
 
 .fdCtt > p{
     font-size: 18px;
-    color: #f6f6f6;
+    color: #d8d8d8;
     font-weight: 300;
+}
+
+#formCttBox{
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--cor1);
+}
+
+#formCtt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#formCtt > h4{
+    font-size: 18px;
+    color: var(--cor1);
+}
+
+#formCtt > input, #formCtt > textarea{
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    padding: 9px 12px;
+    color: var(--cor4);
+    font-size: 15px;
+    outline: none;
+}
+
+#formCtt > input::placeholder{
+    color: var(--cor4);
+}
+
+#formCtt > button{
+    border: 2px solid var(--cor1);
+    font-size: 18px;
+    color:var(--cor1);
+    padding: 5px 60px;
+    font-weight: 400;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+#formCtt > button:hover{
+    background: var(--cor1);
+    color: #fff;
+    font-weight: 400;
+}
+
+#formCtt > textarea{
+    height: 200px;
 }
