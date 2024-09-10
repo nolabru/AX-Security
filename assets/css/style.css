@@ -46,32 +46,16 @@
     position: relative;
 }
 
-/* Slider --------------------------------------------- */
-
-.sctOneSlider{
-    width: 20px;
-    height: 20px;
+#toggleMenu{
+    width: 30px;
+    height: 30px;
+    background: url(/assets/img/icones/menu.svg);
+    background-size: cover;
     position: absolute;
-}
-
-#sctLeft{
-    left: 100px;
-    top: 50%;
-    background: url(/assets/img/icones/sliderIco.png);
-    background-size: cover;
-    transform: rotate(180deg);
+    top: 63px;
+    right: 65px;
+    cursor: pointer;
     display: none;
-}
-
-#sctLeft.active{
-    display: block;
-}
-
-#sctRight{
-    right: 100px;
-    top: 50%;
-    background: url(/assets/img/icones/sliderIco.png);
-    background-size: cover;
 }
 
 /* Barra de Navegação --------------------------------------------- */
@@ -898,4 +882,77 @@
 
 #footerAx > img{
     height: 90%;
+}
+
+/* Responsividade ------------------------------------------------------------- */
+
+@media(1300px >= width){
+    #sctOne{
+        padding: 50px 100px;
+    }
+}
+
+@media(1200px >= width){
+    #sctOne{
+        padding: 50px 30px;
+    }
+}
+
+@media(1000px >= width){
+    #toggleMenu{
+        display: block;
+    }
+
+    #toggleMenu.active{
+        background: url(/assets/img/icones/menuX.svg);
+        background-size: cover;
+    }
+
+    #navBarLinks{
+        display: none;
+    }
+
+    #boasVindas h1{
+        font-size: 45px;
+    }  
+    
+    #boasVindas h3{
+        font-size: 15px;
+    }
+    
+    #btnBv{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media(700px >= width){
+
+    #toggleMenu{
+        top: 53px;
+    }
+
+    #axLogo img{
+        height: 80%;
+    }
+    
+    #boasVindas h1{
+        font-size: 35px;
+        text-align: center;
+    }  
+    
+    #boasVindas h3{
+        font-size: 12.5px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    #btnBv{
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
+
+@media(330px >= width){
+
 }
