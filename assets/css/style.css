@@ -1,5 +1,34 @@
 @import url(global.css);
 
+/* Elementos Fixos ------------------------------------------------------------------ */
+
+.btnFixed{
+    position: fixed;
+    z-index: 1;
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btnFixed:hover{
+    transform: translateY(-5px);
+}
+
+#btnUp{
+    width: 28px;
+    height: 28px;
+    background: url(/assets/img/icones/btnSub.png);
+    bottom: 35px;
+    left: 30px;
+}
+
+#btnWhatsapp{
+    width: 42px;
+    height: 42px;
+    background: url(/assets/img/icones/btnWpp.png);
+    bottom: 30px;
+    right: 30px;
+}
+
+
 /* Seção 1 ------------------------------------------------------------------ */
 
 #sctOne{
@@ -13,6 +42,35 @@
     background: linear-gradient(90deg, #1e73becf,#35dab4c1), 
     url(/assets/img/banners/bannerAx.jpg);
     background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* Slider --------------------------------------------- */
+
+.sctOneSlider{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+#sctLeft{
+    left: 100px;
+    top: 50%;
+    background: url(/assets/img/icones/sliderIco.png);
+    background-size: cover;
+    transform: rotate(180deg);
+    display: none;
+}
+
+#sctLeft.active{
+    display: block;
+}
+
+#sctRight{
+    right: 100px;
+    top: 50%;
+    background: url(/assets/img/icones/sliderIco.png);
     background-size: cover;
 }
 
@@ -719,6 +777,7 @@
 
 #formCtt > button{
     border: 2px solid var(--cor1);
+    background: transparent;
     font-size: 18px;
     color:var(--cor1);
     padding: 5px 60px;
@@ -735,4 +794,108 @@
 
 #formCtt > textarea{
     height: 200px;
+}
+
+
+/* Mapa ------------------------------------------------------------------ */
+
+#mapaAx{
+    width: 100%;
+    height: 580px;
+}
+
+/* Nav Bar Footer -------------------------------------------------------- */
+
+#navBarFooter{
+    width: 100%;
+    height: 50px;
+    background: var(--cor1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navFooterLinks{
+    display: flex;
+}
+
+.navLinkFooter{
+    padding: 0px 20px;
+}
+
+.navLinkFooter > a{
+    font-size: 12px;
+    color: var(--cor5);
+    font-weight: 300;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.navLinkFooter > a:hover{
+    color: #fff;
+}
+
+.navLinkFooter > a::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background: linear-gradient(90deg, transparent, #fff);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navLinkFooter > a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;     
+}
+
+#footerAx{
+    width: 100%;
+    height: 200px;
+    padding: 70px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3e3e3e;
+}
+
+#footerTxt{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#footerTxt > a{
+    padding: 7px 30px;
+    background: var(--cor1);
+    color: #fff;
+    font-weight: 300;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+#footerTxt > p{
+    color: #fff;
+    font-weight: 300;
+}
+
+#footerTxt > p > a{
+    color: #fff;
+    transition: all .4s ease-in-out;
+}
+
+#footerTxt > p > a:hover{
+    color: var(--cor1);    
+}
+
+#footerAx > #redesSociais{
+    margin-right: 235px;
+}
+
+#footerAx > img{
+    height: 90%;
 }
