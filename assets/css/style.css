@@ -46,15 +46,9 @@
     position: relative;
 }
 
-#toggleMenu{
-    width: 30px;
-    height: 30px;
-    background: url(/assets/img/icones/menu.svg);
-    background-size: cover;
-    position: absolute;
-    top: 63px;
-    right: 65px;
-    cursor: pointer;
+/* Toggle Menu -------------------------------------------------------- */
+
+.toggleMenu{
     display: none;
 }
 
@@ -892,24 +886,89 @@
     }
 }
 
+/* Media 1200PX ------------------------------------------ */
+
 @media(1200px >= width){
     #sctOne{
         padding: 50px 30px;
     }
 }
 
+/* Media 1000PX ------------------------------------------ */
+
 @media(1000px >= width){
-    #toggleMenu{
+    .toggleMenu{
+        width: 30px;
+        height: 30px;
+        background: url(/assets/img/icones/menu.svg);
+        background-size: cover;
+        position: absolute;
+        top: 63px;
+        right: 65px;
+        cursor: pointer;
         display: block;
+        transition: all 1s;
+        z-index: 2;
     }
 
-    #toggleMenu.active{
-        background: url(/assets/img/icones/menuX.svg);
+    .toggleMenu.active{
+        background: url(/assets/img/icones/menuX.svg) no-repeat;
+        cursor: pointer;
         background-size: cover;
     }
 
     #navBarLinks{
+        position: absolute;
         display: none;
+        top: 105px;
+        right: 65px;
+        width: 30%;
+        height: 50%;
+        border-radius: 5px;
+        background: #f6f6f6;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #navBarLinks::after{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #f6f6f6;
+        transform: rotate(135deg);
+        top: -2px;
+        right: 5px;
+    }
+
+    .navLink{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .navLink:nth-child(6){
+        border-bottom: 0;
+    }
+
+    .navLink > a{
+        background: linear-gradient(180deg, var(--cor2), var(--cor1));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+    }
+
+    #navBtn{
+        display: none;
+    }
+
+    #navBarLinks.active{
+        display: flex;
     }
 
     #boasVindas h1{
@@ -926,10 +985,16 @@
     }
 }
 
+/* Media 700PX ------------------------------------------- */
+
 @media(700px >= width){
 
-    #toggleMenu{
+    .toggleMenu{
         top: 53px;
+    }
+
+    #navBarLinks{
+        top: 105px;
     }
 
     #axLogo img{
@@ -953,6 +1018,8 @@
     }
 }
 
+/* Media 330PX ------------------------------------------- */
+
 @media(330px >= width){
 
-}
+}   
