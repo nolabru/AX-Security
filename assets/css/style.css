@@ -396,7 +396,7 @@
 .svcImg.cam{background: url(/assets/img/serviços/camImg.png);}
 
 .svcInfos{
-    padding: 20px 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -933,6 +933,27 @@
     .descricaoVtg{
         font-size: 15px;
     }
+
+    #sctFour{
+        padding: 40px 10px 0 10px;
+    }
+
+    .svcBox{
+        width: 500px;
+        height: 325px;
+    }
+
+    .svcTitle{
+        font-size: 24px;
+    }
+
+    .svcDescricao{
+        font-size: 15px;
+    }
+
+    .svcBtn{
+
+    }
 }
 
 /* Media 1200PX ------------------------------------------ */
@@ -1199,6 +1220,47 @@
 @media(620px >= width){
     .conector.n{
         display: block;
+    }
+
+    #sctFour{
+        padding: 40px 0 0 0;
+    }
+
+    .sctsTitle{
+        padding-left: 10px;
+    }
+
+    #servicos{
+        width: 100%;
+    }
+
+    .svcBox{
+        width: 450px;
+        height: 293px;
+    }  
+
+    .svcInfos{
+        padding: 20px 15px;
+    }
+    
+    .svcTitle{
+        font-size: 20px;
+    }
+
+    .svcDescricao{
+        font-size: 13px;
+    }
+
+    .svcBtn{
+        font-size: 11px;
+        height: 35px;
+    }
+}   
+
+/* Media 400PX ------------------------------------------- */
+@media(400px >= width){
+    .svcTitle{
+        font-size: 19px;
     }
 }   
 
