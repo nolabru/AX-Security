@@ -199,6 +199,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 0px 30px;
 }
 
 #infoOne h1{
@@ -234,7 +236,7 @@
 /* Cards Visão --------------------------------------------- */
 
 .cardVisao{
-    width: 450px;
+    width: 310px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -242,21 +244,26 @@
     flex-direction: column;
 }
 
+.cardVisao > img{
+    width: 90px;
+}
+
 .cardVisao.est{
     padding-bottom: 80px;
 }
+
 
 .tituloCard{
     color: #fff;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 26px;
     padding: 35px 0 30px 0;
 }
 
 .descricaoCard{
     text-align: center;
-    padding: 0 35px;
+    font-size: 15px;
     color: #d5d5d5;
     font-weight: 300;
 }
@@ -267,8 +274,24 @@
     width: 100%;
     height: 725px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+#sctThree > section{
+    display: flex;
+}
+
+.cardVtg{
+    width: 290px;
+    height: 370px;
+    margin: 0 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background: #F6F6F6;
+    position: relative;
 }
 
 .cardImg{
@@ -293,16 +316,6 @@
     padding: 4.5px 0;
 }
 
-.cardVtg{
-    width: 290px;
-    height: 370px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    background: #F6F6F6;
-    position: relative;
-}
-
 .tituloVtg{
     font-size: 24px;
     color: var(--cor1);
@@ -318,9 +331,13 @@
 
 .conector{
     position: absolute;
-    right: -50px;
+    right: -45px;
     bottom: 42%;
     z-index: 1;
+}
+
+.conector.n{
+    display: none;
 }
 
 /* Seção Quatro ------------------------------------------------------------------ */
@@ -879,23 +896,91 @@
 }
 
 /* Responsividade ------------------------------------------------------------- */
-
 @media(1300px >= width){
     #sctOne{
         padding: 50px 100px;
     }
+
+    #sctThree{
+        height: 625px;
+    }
+
+    .cardVtg{
+        width: 260px;
+        height: 331px;
+        padding: 20px;
+    }
+
+    .cardImg.se{
+        width: 50px;
+        padding-bottom: 10px;
+    }
+    .cardImg.eq{
+        width: 37px;
+    }
+    .cardImg.es{
+        width: 45px;
+    }
+    .cardImg.ri{
+        width: 48px;
+        padding-bottom: 10px;
+    }
+
+    .tituloVtg{
+        font-size: 20px;
+    }
+
+    .descricaoVtg{
+        font-size: 15px;
+    }
 }
 
 /* Media 1200PX ------------------------------------------ */
-
 @media(1200px >= width){
     #sctOne{
         padding: 50px 30px;
     }
+
+    #sctTwo{
+        height: 450px;
+    }
+
+    .cardVisao.est{
+        padding-bottom: 30px;
+    }
+
+    #sctThree{
+        padding: 60px 100px;
+        height: max-content;
+    }
+
+    #sctThree > section{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cardVtg{
+        margin: 5px;
+    }
+
+    .conector{
+        width: 50px;
+    }
+
+    .conector.n{
+        display: none;
+    }
+    
+    .conector.r{
+        bottom: -30px;
+        right: 40%;
+        transform: rotate(90deg);
+    }
 }
 
 /* Media 1000PX ------------------------------------------ */
-
 @media(1000px >= width){
     .toggleMenu{
         width: 30px;
@@ -983,10 +1068,81 @@
         font-size: 14px;
         padding: 10px 20px;
     }
+
+    #infoOne h1{
+        font-size: 35px;
+    }
+
+    #sctTwo{
+        height: 100%;
+    }
+
+    .cardVisao{
+        padding-top: 60px;
+    }
+
+    .cardVisao > img{
+        width: 70px;
+    }
+
+    .cardVisao.est{
+        padding-bottom: 50px;
+    }
+
+    .tituloCard{
+        font-size: 20px;
+    }
+
+    .descricaoCard{
+        font-size: 12px;
+        padding: 0 20px;
+    }
+}
+
+/* Media 800PX ------------------------------------------- */
+@media(800px >= width){
+
+    #sctTwo{
+        flex-wrap: wrap;
+        height: max-content;
+        background: url(/assets/img/geral/sctTwoBg.png);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #techVideo{
+        display: none;
+    }
+
+    .cardVisao{
+        padding: 20px 0;
+    }
+
+    .cardVisao > img{
+        width: 70px;
+    }
+
+    .cardVisao.est{
+        padding-bottom: 15px;
+    }
+
+    .tituloCard{
+        font-size: 16px;
+        padding: 20px 0 10px 0;
+    }
+
+    .descricaoCard{
+        font-size: 12px;
+        padding: 0 20px;
+    }
+    
+    #sctThree{
+        padding: 60px 40px;
+        margin-top: 0;
+    }
+
 }
 
 /* Media 700PX ------------------------------------------- */
-
 @media(700px >= width){
 
     .toggleMenu{
@@ -1016,10 +1172,39 @@
         font-size: 12px;
         padding: 10px 20px;
     }
+
+    #infoOne{
+        height: 150px;
+    }
+
+    #infoOne h1{
+        font-size: 25px;
+    }
+
+    .descricaoCard{
+        padding: 0 40px;
+    }
+
+    .tituloVtg{
+        padding: 20px 0 22px 0;
+    }
+    
+    .descricaoVtg{
+        padding-right: 20px;
+    }
+
 }
 
+/* Media 620PX ------------------------------------------- */
+@media(620px >= width){
+    .conector.n{
+        display: block;
+    }
+}   
+
 /* Media 330PX ------------------------------------------- */
-
 @media(330px >= width){
-
+    #infoOne h1{
+        font-size: 20px;
+    }
 }   
