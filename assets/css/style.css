@@ -344,8 +344,7 @@
 
 #sctFour{
     width: 100%;
-    height: 1765px;
-    padding: 40px 38px 0 38px;
+    padding: 40px 38px 130px 38px;
     background: #f8f8f8;
 }
 
@@ -459,9 +458,6 @@
 
 .info.two{
     background: #fff;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: bottom;
 }
 
 .info > a{
@@ -537,7 +533,6 @@
 
 #sctSix{
     width: 100%;
-    height: 1985px;
     padding: 110px 38px;
 }
 
@@ -623,7 +618,6 @@
 
 #sctSeven{
     width: 100%;
-    height: 475px;
     padding: 80px 50px;
 }
 
@@ -897,6 +891,9 @@
 
 /* Responsividade ------------------------------------------------------------- */
 @media(1300px >= width){
+    html{
+        overflow-x: hidden;
+    }
     #sctOne{
         padding: 50px 100px;
     }
@@ -935,7 +932,7 @@
     }
 
     #sctFour{
-        padding: 40px 10px 0 10px;
+        padding: 40px 10px 130px 10px;
     }
 
     .svcBox{
@@ -951,8 +948,12 @@
         font-size: 15px;
     }
 
-    .svcBtn{
+    #sctFive{
+        height: 850px;
+    }
 
+    #empDescricao{
+        justify-content: space-around;
     }
 }
 
@@ -998,6 +999,10 @@
         bottom: -30px;
         right: 40%;
         transform: rotate(90deg);
+    }
+
+    .cltImg.view.five{
+        display: none;
     }
 }
 
@@ -1118,6 +1123,70 @@
         font-size: 12px;
         padding: 0 20px;
     }
+
+    #sctFive{
+        padding: 0 80px;
+        height: max-content;
+    }
+
+    #empImg{
+        display: none;
+        display: none;
+    }
+
+    #sctFive > section{
+        width: 100%;
+    }
+
+    .empTxt:nth-child(1){
+        margin-top: 10px;
+    }
+
+    #empRedesSociais{
+        padding-top: 15px;
+        margin: auto;
+    }
+}
+
+/* Media 900PX --------------------------------------- */
+
+@media(900px >= width){
+    .cltImg.view.four{
+        display: none;
+    }
+
+    #contato{
+        height: 500px;
+    }
+
+    #dadosCtt{
+        padding: 40px 85px;
+    }
+
+    .cttBfIcon{
+        font-size: 17px;
+    }
+
+    .fdCtt > p{
+        font-size: 12px;
+    }
+
+    #formCttBox{
+        padding: 30px;
+    }
+    
+    #formCtt > h4{
+        font-size: 16px;
+    }
+
+    #formCtt > input, #formCtt > textarea{
+        font-size: 12px;
+    }
+
+    #formCtt > button{
+        font-size: 15px;
+    }
+
 }
 
 /* Media 800PX ------------------------------------------- */
@@ -1159,6 +1228,10 @@
     #sctThree{
         padding: 60px 40px;
         margin-top: 0;
+    }
+
+    #sctFive{
+        padding: 0 60px;
     }
 
 }
@@ -1214,6 +1287,42 @@
         padding-right: 20px;
     }
 
+    .sctsTitle{
+        font-size: 20px;
+    }
+
+    .info{
+        height: 170px;  
+    }
+
+    .info > a{
+        font-size: 20px;   
+        padding: 20px 100px;  
+    }
+
+    #pdtDescricao{
+        font-size: 13px;
+    }
+
+    #clientes{
+        justify-content: space-evenly;
+    }
+
+    #sctSeven{
+        padding: 80px 50px 40px 50px;
+    }
+
+    .cltImg.view.three{
+        display: none;
+    }
+
+    .infoRsTitle{
+        font-size: 38px;
+    }
+    
+    .infoRsDescricao{
+        font-size: 13px;
+    }
 }
 
 /* Media 620PX ------------------------------------------- */
@@ -1223,10 +1332,10 @@
     }
 
     #sctFour{
-        padding: 40px 0 0 0;
+        padding: 40px 0 80px 0;
     }
 
-    .sctsTitle{
+    .sctsTitle.one{
         padding-left: 10px;
     }
 
@@ -1248,19 +1357,187 @@
     }
 
     .svcDescricao{
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .svcBtn{
         font-size: 11px;
         height: 35px;
     }
+
+    .info{
+        height: 150px;  
+    }
+
+    .info > a{
+        font-size: 15px;   
+        padding: 15px 60px;  
+    }
+
+    #sctFive{
+        padding: 0 5px;
+    }
+
+    #empDescricao{
+        padding: 35px;
+    }
+
+    .empTxt{
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .sctsTitle.one::after{
+        left: 8px;
+    }
+
+    .sctsTitle.two{
+        font-size: 18px;
+    }
+
+    #sctSix{
+        padding: 110px 38px 50px 38px;
+    }
+
+    #clientes{
+        justify-content: center;
+    }
+
+    .cltImg.view.two{
+        display: none;
+    }
+
+    #sctSeven{
+        padding: 80px 50px 45px 50px;
+    }
+
+    
+    #infoContato{
+        height: 120px;
+    }
+
+    #contato{
+        height: max-content;
+        flex-direction: column;
+    }
+
+    #contato > section{
+        width: 100%;
+    }
+
+    #dadosCtt{
+        padding: 40px 85px 10px 85px;
+    }
+
+    .cttBfIcon{
+        font-size: 17px;
+    }
+
+    .fdCtt{
+        margin-bottom: 30px;
+    }
+
+    .fdCtt > p{
+        font-size: 12px;
+    }
+    
+    #formCttBox{
+        border: 0;
+    }
+
+    #formCtt > h4{
+        margin-bottom: 10px;
+    }
+
+    #formCtt > input, #formCtt > textarea{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    #formCtt > button{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    #mapaAx{
+        height: 450px;
+    }
+
+    .toggleFooter{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background: url(/assets/img/icones/menu.svg);
+        background-size: cover;
+        cursor: pointer;
+        transition: all 1s;
+        z-index: 2;
+    }
+
+    .toggleFooter.active{
+        background: url(/assets/img/icones/menuX.svg);
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    #navFooterLinks{
+        display: none;
+        position: absolute; 
+        background: var(--cor3);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 35%;
+        margin-bottom: 245px;
+        border-radius: 5px;
+        transition: all .4s;
+    }
+
+    
+    #navFooterLinks::after{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: var(--cor3);
+        transform: rotate(135deg);
+        bottom: -8px;
+        right: 47.5%;
+    }
+
+    .navLinkFooter{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #474747
+    }
+
+    .navLinkFooter:nth-child(6){
+        border-bottom: 0;
+    }
+
+    .navLinkFooter > a{
+        color: #f6f6f6;
+        font-weight: 300;
+    }
+
+    #navFooterLinks.active{
+        display: flex;
+    }
+
 }   
 
 /* Media 400PX ------------------------------------------- */
 @media(400px >= width){
     .svcTitle{
         font-size: 19px;
+    }
+
+    #infoContato > .infoRsTitle{
+        font-size: 34px;
     }
 }   
 
