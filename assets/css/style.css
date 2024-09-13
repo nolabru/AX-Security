@@ -386,11 +386,11 @@ body.active{
     background: #00000099;
     position: fixed;    
     z-index: 3;
-    display: none;
+    transform: scaleX(0);
 }
 
 .svcDetalhes.active{
-    display: block;
+    transform: scaleX(1);
 }
 
 .svcCardDetalhes{
@@ -400,6 +400,7 @@ body.active{
     top: 25%;
     left: 25%;
     background: #fff;
+    transform: scale(1);
 }
 
 .toggleDetalhes{
@@ -412,6 +413,47 @@ body.active{
     top: 10px;
     right: 10px;
     filter: invert();
+}
+
+.svcCardDetalhes span{
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+.svcCardDetalhes.seg > h3{
+    text-transform: uppercase;
+    background: linear-gradient(90deg, var(--cor1), var(--cor2));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.svcCardDetalhes.seg > p{
+    font-size: 14px;
+    color: #787D85;
+    margin-top: 10px;
+}
+
+.svcCardDetalhes.seg > h5{
+    font-size: 14px;
+    color: #787D85;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.svcCardDetalhes.seg li{
+    color: #787D85;
+    margin: 6px 0 0 25px;
+}
+
+.svcCardDetalhes.seg li::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    left: 21px;
+    background: url(/assets/img/icones/arrow.png);
+    background-size: cover;
+    position: absolute;
 }
 
 /* ---------------------------------------------- */
@@ -938,9 +980,6 @@ body.active{
 
 /* Responsividade ------------------------------------------------------------- */
 @media(1300px >= width){
-    html{
-        overflow-x: hidden;
-    }
     #sctOne{
         padding: 50px 100px;
     }
@@ -1050,6 +1089,10 @@ body.active{
 
     .cltImg.view.five{
         display: none;
+    }
+
+    .svcCardDetalhes{
+        width: 75%;
     }
 }
 
