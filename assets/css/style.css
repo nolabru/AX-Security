@@ -1,5 +1,9 @@
 @import url(global.css);
 
+body.active{
+    overflow-y: hidden;
+}
+
 /* Elementos Fixos ------------------------------------------------------------------ */
 
 .btnFixed{
@@ -27,7 +31,6 @@
     bottom: 30px;
     right: 30px;
 }
-
 
 /* Seção 1 ------------------------------------------------------------------ */
 
@@ -374,7 +377,46 @@
     padding-top: 50px;
 }
 
-.svcBox{
+/* Detalhes ------------------------------------- */
+
+.svcDetalhes{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #00000099;
+    position: fixed;    
+    z-index: 3;
+    display: none;
+}
+
+.svcDetalhes.active{
+    display: block;
+}
+
+.svcCardDetalhes{
+    position: absolute;
+    width: 50%;
+    padding: 20px;
+    top: 25%;
+    left: 25%;
+    background: #fff;
+}
+
+.toggleDetalhes{
+    width: 30px;
+    height: 30px;
+    background: url(/assets/img/icones/menuX.svg);
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    filter: invert();
+}
+
+/* ---------------------------------------------- */
+
+.svcBox{    
     width: 592px;
     height: 387px;
     display: flex;
@@ -440,6 +482,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: transform .5s ease-in-out;
+    cursor: pointer;
 }
 
 .svcBtn:hover{
