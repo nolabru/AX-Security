@@ -386,21 +386,25 @@ body.active{
     background: #00000099;
     position: fixed;    
     z-index: 3;
-    transform: scaleX(0);
+    transform: scale(0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .svcDetalhes.active{
-    transform: scaleX(1);
+    transform: scale(1);
 }
 
-.svcCardDetalhes{
+.svcCardDetalhes, #tpEvt{
     position: absolute;
     width: 50%;
     padding: 20px;
-    top: 25%;
-    left: 25%;
     background: #fff;
     transform: scale(1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .toggleDetalhes{
@@ -420,42 +424,99 @@ body.active{
     font-weight: bold;
 }
 
-.svcCardDetalhes.seg > h3{
+.svcCardDetalhes > h3{
     text-transform: uppercase;
     background: linear-gradient(90deg, var(--cor1), var(--cor2));
     background-clip: text;
     -webkit-text-fill-color: transparent;    
 }
 
-.svcCardDetalhes.seg > p{
+.svcCardDetalhes > p{
     font-size: 14px;
     color: #787D85;
     margin-top: 10px;
+    text-align: justify;
 }
 
-.svcCardDetalhes.seg > h5{
+.svcCardDetalhes > h5{
     font-size: 14px;
     color: #787D85;
     font-weight: bold;
     margin: 10px 0;
 }
 
-.svcCardDetalhes.seg li{
+.svcCardDetalhes li, #tpEvt li{
     color: #787D85;
     margin: 6px 0 0 25px;
 }
 
-.svcCardDetalhes.seg li::before{
+.svcCardDetalhes li::before, #tpEvt li::before{
     content: '';
     width: 18px;
     height: 18px;
-    margin-top: 3px;
-    left: 21px;
+    margin-top: 3.5px;
+    left: 18px;
     background: url(/assets/img/icones/arrow.png);
     background-size: cover;
     position: absolute;
 }
 
+#tpEvt li::before{
+    margin-top: 0;
+}
+
+#tpEvtBtn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 2px 15px;
+    border: 1px solid var(--cor1);
+    cursor: pointer;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#tpEvtBtn:hover{
+    transform: translateX(10px);
+    background: var(--cor1);
+    color: #fff;
+}
+
+.svcCardDetalhes.evt{
+    transform: scale(1);
+}
+
+.svcCardDetalhes.evt.off{
+    transform: scale(0);
+}
+
+#tpEvt{
+    position: absolute;
+    transform: scale(0);
+    z-index: 5;
+}
+
+#tpEvt.active{
+    transform: scale(1);
+}
+
+#tpEvt > h5{
+    font-size: 18px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, var(--cor1), var(--cor2));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#toggleEvt{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url(/assets/img/icones/arrow.png);
+    background-size: cover;
+    top: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
 /* ---------------------------------------------- */
 
 .svcBox{    
@@ -1093,6 +1154,8 @@ body.active{
 
     .svcCardDetalhes{
         width: 75%;
+        top: 10%;
+        left: 12.5%;
     }
 }
 
@@ -1649,6 +1712,12 @@ body.active{
         margin-top: 20px;
     }
 
+    .svcCardDetalhes, #tpEvt{
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
 }   
 
 /* Media 400PX ------------------------------------------- */
