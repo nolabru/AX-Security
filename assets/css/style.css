@@ -414,9 +414,10 @@ body.active{
     background-size: cover;
     cursor: pointer;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     filter: invert();
+    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .svcCardDetalhes span{
@@ -510,13 +511,19 @@ body.active{
     position: absolute;
     width: 25px;
     height: 25px;
-    background: url(/assets/img/icones/arrow.png);
+    background: url(/assets/img/icones/menuX.svg);
     background-size: cover;
-    top: 10px;
-    right: 10px;
-    transform: rotate(180deg);
+    top: 20px;
+    right: 20px;
     cursor: pointer;
+    filter: invert();
+    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.toggleDetalhes:hover, #toggleEvt:hover{
+    transform: translateY(-3px);
+}
+
 /* ---------------------------------------------- */
 
 .svcBox{    

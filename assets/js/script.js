@@ -15,6 +15,12 @@ function menuT(){
     }   
 }
 
+// Abrir Instagram -----------------------
+
+function openIg(){
+    window.open("https://www.instagram.com/axsecurity", "_blank", 'noopener, noteferrez');
+}
+
 // Detalhes Serviços ---------------------
 
 const body = document.querySelector('body');
@@ -43,7 +49,13 @@ const detalheEvt = document.querySelector('.svcBtn.evt');
 const detalheBoxEvt = document.querySelector('.svcDetalhes.evt');
 const toggleDetalhesEvt = document.querySelector('.toggleDetalhes.evt');
 
+const detalheAxc = document.querySelector('.svcBtn.axc');
+const detalheBoxAxc = document.querySelector('.svcDetalhes.axc');
+const toggleDetalhesAxc = document.querySelector('.toggleDetalhes.axc');
 
+const detalheCam = document.querySelector('.svcBtn.cam');
+const detalheBoxCam = document.querySelector('.svcDetalhes.cam');
+const toggleDetalhesCam = document.querySelector('.toggleDetalhes.cam');
 
 detalheSeg.addEventListener('click', segDt);
 detalheAla.addEventListener('click', alaDt);
@@ -51,11 +63,12 @@ detalheCer.addEventListener('click', cerDt);
 detalheIst.addEventListener('click', istDt);
 detalheAcs.addEventListener('click', acsDt);
 detalheEvt.addEventListener('click', evtDt);
+detalheAxc.addEventListener('click', axcDt);
+detalheCam.addEventListener('click', camDt);
 
 function blockBody(){
     body.classList.add('active');
 }
-
 function segDt(){
     blockBody();
     detalheBox.classList.add('active');  
@@ -65,7 +78,6 @@ function segDt(){
         body.classList.remove('active');
     }
 };
-
 function alaDt(){
     blockBody();
     detalheBoxAla.classList.add('active');
@@ -75,7 +87,6 @@ function alaDt(){
         body.classList.remove('active');
     }
 }
-
 function cerDt(){
     blockBody();
     detalheBoxCer.classList.add('active');
@@ -85,7 +96,6 @@ function cerDt(){
         body.classList.remove('active');
     }
 }
-
 function istDt(){
     blockBody();
     detalheBoxIst.classList.add('active');
@@ -95,7 +105,6 @@ function istDt(){
         body.classList.remove('active');
     }
 }
-
 function acsDt(){
     blockBody();
     detalheBoxAcs.classList.add('active');
@@ -105,7 +114,6 @@ function acsDt(){
         body.classList.remove('active');
     }
 }
-
 function evtDt(){
     blockBody();
     detalheBoxEvt.classList.add('active');
@@ -133,8 +141,24 @@ function evtDt(){
         }
     }
 }
-
-
+function axcDt(){
+    blockBody();
+    detalheBoxAxc.classList.add('active');
+    toggleDetalhesAxc.addEventListener('click', back);
+    function back(){
+        detalheBoxAxc.classList.remove('active');
+        body.classList.remove('active');
+    }
+}
+function camDt(){
+    blockBody();
+    detalheBoxCam.classList.add('active');
+    toggleDetalhesCam.addEventListener('click', back);
+    function back(){
+        detalheBoxCam.classList.remove('active');
+        body.classList.remove('active');
+    }
+}
 
 
 
