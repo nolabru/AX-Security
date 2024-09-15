@@ -217,23 +217,18 @@ body.active{
 
 #sctTwo{
     width: 100%;
-    height: 550px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
-    background: transparent;
+    padding: 200px 100px;
 }
 
-/* Vídeo --------------------------------------------- */
-
-#techVideo{
+#particles-js{
     position: absolute;
-    filter: opacity(90%);
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: -1;
+    height: 100%;
+    background: linear-gradient(150deg, #175d99, #051421);
 }
 
 /* Cards Visão --------------------------------------------- */
@@ -245,6 +240,7 @@ body.active{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 1;
 }
 
 .cardVisao > img{
@@ -254,7 +250,6 @@ body.active{
 .cardVisao.est{
     padding-bottom: 80px;
 }
-
 
 .tituloCard{
     color: #fff;
@@ -377,26 +372,29 @@ body.active{
     padding-top: 50px;
 }
 
-/* Detalhes ------------------------------------- */
+/* Detalhes Serviços ------------------------------------- */
 
-.svcDetalhes{
+.svcDetalhes, .pdtDetalhes{
     width: 100%;
     height: 100%;
     top: 0;
     background: #00000099;
     position: fixed;    
+    opacity: 0;
     z-index: 3;
     transform: scale(0);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity .8s ease-in-out;
 }
 
 .svcDetalhes.active{
     transform: scale(1);
+    opacity: 1; 
 }
 
-.svcCardDetalhes, #tpEvt{
+.svcCardDetalhes, #tpEvt, .pdtCardDetalhes{
     position: absolute;
     width: 50%;
     padding: 20px;
@@ -405,6 +403,7 @@ body.active{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 5px;
 }
 
 .toggleDetalhes{
@@ -437,6 +436,7 @@ body.active{
     color: #787D85;
     margin-top: 10px;
     text-align: justify;
+    font-weight: 300;
 }
 
 .svcCardDetalhes > h5{
@@ -682,7 +682,7 @@ body.active{
     margin: 0 20px 0 0;
 }
 
-/* Seção Cinco ------------------------------------------------------------------ */
+/* Seção Seis ------------------------------------------------------------------ */
 
 #sctSix{
     width: 100%;
@@ -748,13 +748,42 @@ body.active{
     width: 230px;
 }
 
+/* Detalhes Produtos ------------------------------------- */
+.pdtCardDetalhes{
+    width: 40%;  
+}
+
+.pdtCardDetalhes > h3{
+    color: #787D85;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.pdtCardDetalhes > p{
+    color: #787D85;
+    margin-top: 10px;
+    text-align: justify;
+    padding-right: 20px;
+    font-weight: 300;
+}
+
+.pdtCardDetalhes ul{
+    margin-top: 10px;
+}
+
+.pdtCardDetalhes li{
+    color: #787D85;
+    font-weight: 300;
+}
+
+
 /* Faixa Informações Três ------------------------------------------------------------------ */
 
 .info.three{
     background: url(/assets/img/geral/infoThreeBg.png);
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; 
 }
 
 .info.three > a{
@@ -766,6 +795,7 @@ body.active{
 .info.three > a:hover{
     transform: translateY(-10px);
 }
+
 
 /* Seção Sete ----------------------------------------------------------------------------------*/
 
@@ -1047,6 +1077,21 @@ body.active{
 }
 
 /* Responsividade ------------------------------------------------------------- */
+
+@media(1800px <= width){
+    #sctFour{
+        padding: 40px 200px 130px 200px;
+    }
+
+    #sctSix{
+        padding: 110px 300px
+    }
+
+    #sctSeven{
+        padding: 80px 300px;
+    }
+}
+
 @media(1300px >= width){
     #sctOne{
         padding: 50px 100px;
@@ -1118,7 +1163,7 @@ body.active{
     }
 
     #sctTwo{
-        height: 450px;
+        padding: 100px 50px;
     }
 
     .cardVisao.est{
@@ -1259,13 +1304,9 @@ body.active{
         font-size: 35px;
     }
 
-    #sctTwo{
-        height: 100%;
-    }
-
     .cardVisao{
         padding-top: 60px;
-    }
+    }   
 
     .cardVisao > img{
         width: 70px;
@@ -1363,12 +1404,8 @@ body.active{
     #sctTwo{
         flex-wrap: wrap;
         height: max-content;
-        background: url(/assets/img/geral/sctTwoBg.png);
         background-size: cover;
         background-attachment: fixed;
-    }
-    #techVideo{
-        display: none;
     }
 
     .cardVisao{
