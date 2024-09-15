@@ -19,7 +19,7 @@ body.active{
 #btnUp{
     width: 28px;
     height: 28px;
-    background: url(/assets/img/icones/btnSub.png);
+    background: url(bg_css/btnSub.png);
     bottom: 35px;
     left: 30px;
 }
@@ -27,7 +27,7 @@ body.active{
 #btnWhatsapp{
     width: 42px;
     height: 42px;
-    background: url(/assets/img/icones/btnWpp.png);
+    background: url(bg_css/btnWpp.png);
     bottom: 30px;
     right: 30px;
 }
@@ -43,7 +43,7 @@ body.active{
     align-items: center;
     justify-content: space-between;    
     background: linear-gradient(90deg, #1e73becf,#35dab4c1), 
-    url(/assets/img/banners/bannerAx.jpg);
+    url(bg_css/bannerAx.jpg);
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -221,7 +221,7 @@ body.active{
     align-items: center;
     justify-content: space-evenly;
     position: relative;
-    padding: 200px 100px;
+    padding: 150px 100px;
 }
 
 #particles-js{
@@ -409,7 +409,7 @@ body.active{
 .toggleDetalhes{
     width: 30px;
     height: 30px;
-    background: url(/assets/img/icones/menuX.svg);
+    background: url(bg_css/menuX.svg);
     background-size: cover;
     cursor: pointer;
     position: absolute;
@@ -457,7 +457,7 @@ body.active{
     height: 18px;
     margin-top: 3.5px;
     left: 18px;
-    background: url(/assets/img/icones/arrow.png);
+    background: url(bg_css/arrow.png);
     background-size: cover;
     position: absolute;
 }
@@ -511,7 +511,7 @@ body.active{
     position: absolute;
     width: 25px;
     height: 25px;
-    background: url(/assets/img/icones/menuX.svg);
+    background: url(bg_css/menuX.svg);
     background-size: cover;
     top: 20px;
     right: 20px;
@@ -537,14 +537,14 @@ body.active{
     height: 100%;
 }
 
-.svcImg.seg{background: url(/assets/img/serviços/segImg.png);}
-.svcImg.ala{background: url(/assets/img/serviços/alaImg.png);}
-.svcImg.cer{background: url(/assets/img/serviços/cerImg.png);}
-.svcImg.ist{background: url(/assets/img/serviços/istImg.png);}
-.svcImg.acs{background: url(/assets/img/serviços/acsImg.png);}
-.svcImg.evt{background: url(/assets/img/serviços/evtImg.png);}
-.svcImg.axc{background: url(/assets/img/serviços/axcImg.png);}
-.svcImg.cam{background: url(/assets/img/serviços/camImg.png);}
+.svcImg.seg{background: url(bg_css/segImg.png);}
+.svcImg.ala{background: url(bg_css/alaImg.png);}
+.svcImg.cer{background: url(bg_css/cerImg.png);}
+.svcImg.ist{background: url(bg_css/istImg.png);}
+.svcImg.acs{background: url(bg_css/acsImg.png);}
+.svcImg.evt{background: url(bg_css/evtImg.png);}
+.svcImg.axc{background: url(bg_css/axcImg.png);}
+.svcImg.cam{background: url(bg_css/camImg.png);}
 
 .svcInfos{
     padding: 20px;
@@ -652,7 +652,7 @@ body.active{
 }   
 
 #empImg{
-    background: url(/assets/img/geral/axBanner.png);
+    background: url(bg_css/axBanner.png);
     background-size: cover;
     background-position: center;
 }
@@ -780,7 +780,7 @@ body.active{
 /* Faixa Informações Três ------------------------------------------------------------------ */
 
 .info.three{
-    background: url(/assets/img/geral/infoThreeBg.png);
+    background: url(bg_css/infoThreeBg.png);
     background-position: center;
     background-attachment: fixed;
     background-size: cover; 
@@ -875,7 +875,7 @@ body.active{
 }
 
 #dadosCtt{
-    background: url(/assets/img/geral/cttBg.png);
+    background: url(bg_css/cttBg.png);
     background-size: cover;
     background-position: center;
     padding: 100px 85px;
@@ -901,9 +901,9 @@ body.active{
     left: -35px;;
 }
 
-.cttBfIcon.ed::before{background: url(/assets/img/icones/iconMapa.png);}
-.cttBfIcon.tl::before{background: url(/assets/img/icones/iconContato.png);}
-.cttBfIcon.em::before{background: url(/assets/img/icones/iconEmail.png);top: 3px;}
+.cttBfIcon.ed::before{background: url(bg_css/iconMapa.png);}
+.cttBfIcon.tl::before{background: url(bg_css/iconContato.png);}
+.cttBfIcon.em::before{background: url(bg_css/iconEmail.png);top: 3px;}
 
 .fdCtt > p{
     font-size: 18px;
@@ -1216,7 +1216,7 @@ body.active{
     .toggleMenu{
         width: 30px;
         height: 30px;
-        background: url(/assets/img/icones/menu.svg);
+        background: url(bg_css/menu.svg);
         background-size: cover;
         position: absolute;
         top: 63px;
@@ -1228,7 +1228,7 @@ body.active{
     }
 
     .toggleMenu.active{
-        background: url(/assets/img/icones/menuX.svg) no-repeat;
+        background: url(bg_css/menuX.svg) no-repeat;
         cursor: pointer;
         background-size: cover;
     }
@@ -1680,7 +1680,7 @@ body.active{
         width: 25px;
         height: 25px;
         position: absolute;
-        background: url(/assets/img/icones/menu.svg);
+        background: url(bg_css/menu.svg);
         background-size: cover;
         cursor: pointer;
         transition: all 1s;
@@ -1688,7 +1688,7 @@ body.active{
     }
 
     .toggleFooter.active{
-        background: url(/assets/img/icones/menuX.svg);
+        background: url(bg_css/menuX.svg);
         background-size: cover;
         cursor: pointer;
     }
