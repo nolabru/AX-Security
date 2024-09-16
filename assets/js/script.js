@@ -354,3 +354,12 @@ function stm8000(){
         body.classList.remove('active');
     }
 }
+
+window.revelar = ScrollReveal({reset:true});
+
+revelar.reveal("#boasVindas", { 
+    duration: 1000,
+    delay: 200,
+    distance: "90px",
+    origin: "top",
+});
