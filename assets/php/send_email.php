@@ -28,7 +28,7 @@
   $headers .= "From: $nome <$email>";
 
   //Enviar
-  mail($destino, $arquivo, $headers);
+  mail($destino,$assunto, $arquivo, $headers);
   
   echo "E-mail Enviado com Sucesso!";
 ?>
