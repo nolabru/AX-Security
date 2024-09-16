@@ -36,7 +36,7 @@ body.active{
 
 #sctOne{
     width: 100%;
-    height: 650px;
+    height: 100vh;
     padding: 50px 160px;
     display: flex;
     flex-direction: column;
@@ -389,7 +389,7 @@ body.active{
     transition: opacity .8s ease-in-out;
 }
 
-.svcDetalhes.active{
+.svcDetalhes.active, .pdtDetalhes.active{
     transform: scale(1);
     opacity: 1; 
 }
@@ -492,11 +492,14 @@ body.active{
 #tpEvt{
     position: absolute;
     transform: scale(0);
+    opacity: 0;
     z-index: 5;
+    transition: opacity .8s ease-in-out;
 }
 
 #tpEvt.active{
     transform: scale(1);
+    opacity: 1;
 }
 
 #tpEvt > h5{
@@ -757,6 +760,17 @@ body.active{
     color: #787D85;
     font-weight: 500;
     font-size: 17px;
+    position: relative;
+}
+
+.pdtCardDetalhes > h3::after{
+    content: '';
+    position: absolute;
+    width: 7%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--cor2), var(--cor1));
+    left: 0;
+    bottom: -6px;
 }
 
 .pdtCardDetalhes > p{
@@ -774,6 +788,20 @@ body.active{
 .pdtCardDetalhes li{
     color: #787D85;
     font-weight: 300;
+    position: relative;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+.pdtCardDetalhes li::before{
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: url(assets/arrow.png);
+    background-size: cover;
+    left: 0;
+    top: 2px;
 }
 
 
@@ -972,6 +1000,9 @@ body.active{
     height: 200px;
 }
 
+input[type=number]::-webkit-inner-spin-button{
+    appearance: none; 
+}   
 
 /* Mapa ------------------------------------------------------------------ */
 
@@ -1092,6 +1123,8 @@ body.active{
     }
 }
 
+/* ----------------------Media 1300PX */
+
 @media(1300px >= width){
     #sctOne{
         padding: 50px 100px;
@@ -1154,6 +1187,10 @@ body.active{
     #empDescricao{
         justify-content: space-around;
     }
+
+    .pdtCardDetalhes {
+        width: 75%;
+    }
 }
 
 /* Media 1200PX ------------------------------------------ */
@@ -1206,8 +1243,6 @@ body.active{
 
     .svcCardDetalhes{
         width: 75%;
-        top: 10%;
-        left: 12.5%;
     }
 }
 
@@ -1235,7 +1270,9 @@ body.active{
 
     #navBarLinks{
         position: absolute;
-        display: none;
+        transform: scale(0);
+        transition: all .4s;
+        opacity: 0;
         top: 105px;
         right: 65px;
         width: 30%;
@@ -1244,6 +1281,13 @@ body.active{
         background: #f6f6f6;
         flex-direction: column;
         justify-content: center;
+    }
+    
+    #navBarLinks.active{
+        display: flex;
+        transform: scale(1);
+        opacity: 1;
+        transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);  
     }
 
     #navBarLinks::after{
@@ -1281,10 +1325,6 @@ body.active{
 
     #navBtn{
         display: none;
-    }
-
-    #navBarLinks.active{
-        display: flex;
     }
 
     #boasVindas h1{
@@ -1694,7 +1734,8 @@ body.active{
     }
 
     #navFooterLinks{
-        display: none;
+        transform: scale(0);
+        opacity: 0;
         position: absolute; 
         background: var(--cor3);
         flex-direction: column;
@@ -1739,6 +1780,9 @@ body.active{
 
     #navFooterLinks.active{
         display: flex;
+        transform: scale(1);
+        opacity: 1;
+        transition: opacity 1s; 
     }
 
     #footerAx{
@@ -1756,7 +1800,7 @@ body.active{
         margin-top: 20px;
     }
 
-    .svcCardDetalhes, #tpEvt{
+    .svcCardDetalhes, #tpEvt, .pdtCardDetalhes{
         width: 100%;
         top: 0;
         left: 0;

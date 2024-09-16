@@ -16,12 +16,12 @@
             <header id="navBar">
                 <a id="axLogo" href=""><img src="assets/img/geral/Axlogo.png" alt="LogoAx" title="Logo Ax Security"></a>
                 <ul id="navBarLinks">
-                    <li class="navLink"><a href="">Home</a></li>
-                    <li class="navLink"><a href="">Visão</a></li>
-                    <li class="navLink"><a href="">Serviços</a></li>
-                    <li class="navLink"><a href="">Empresa</a></li>
-                    <li class="navLink"><a href="">Produtos</a></li>
-                    <li class="navLink"><a href="">Contato</a></li>
+                    <li class="navLink"><a href="#sctOne">Home</a></li>
+                    <li class="navLink"><a href="#infoOne">Visão</a></li>
+                    <li class="navLink"><a href="#sctFour">Serviços</a></li>
+                    <li class="navLink"><a href="#sctFive">Empresa</a></li>
+                    <li class="navLink"><a href="#sctSix">Produtos</a></li>
+                    <li class="navLink"><a href="#infoContato">Contato</a></li>
                     <li id="navBtn"><a href="https://api.whatsapp.com/send?phone=5511933358899" target="_blank">Solicite um Orçamento</a></li>
                 </ul>
             </header>
@@ -395,7 +395,7 @@
                 </div>    
                 <article class="pdtCard amt2008">
                     <h4 class="pdtTitle">CENTRAL DE ALARME INTELBRAS <span>AMT2008</span></h4>
-                    <img src="assets/img/produtos/cda.png" alt="">
+                    <img id="imgAmt2008" src="assets/img/produtos/cda.png" alt="">
                 </article>
 
 
@@ -408,7 +408,7 @@
                 </div>    
                 <article class="pdtCard">
                     <h4 class="pdtTitle">CENTRAL DE ALARME INTELBRAS <span>AMT2010</span></h4>
-                    <img src="assets/img/produtos/cdaTwo.png" alt="">
+                    <img id="imgAmt2010" src="assets/img/produtos/cdaTwo.png" alt="">
                 </article>
 
 
@@ -421,7 +421,7 @@
                 </div>    
                 <article class="pdtCard">
                     <h4 class="pdtTitle">DVR INTELBRAS</h4>
-                    <img src="assets/img/produtos/dvr.png" alt="">
+                    <img id="imgDvr" src="assets/img/produtos/dvr.png" alt="">
                 </article>
 
 
@@ -429,38 +429,22 @@
                     <div class="pdtCardDetalhes cam">
                         <h3>CÂMERA - Série 3000: Robustez</h3>
                         <p>Com produtos mais elaborados, esta série é ideal para projetos que requerem maior robustez devido ao acabamento metálico das câmeras somado a alta qualidade de imagem.</p>
-                        <div class="toggleDetalhes cam"></div>
+                        <div class="toggleDetalhes cams"></div>
                     </div>
                 </div>    
                 <article class="pdtCard">
                     <h4 class="pdtTitle">CÂMERAS <span>AHD.HCVI.HDTVI.ANALOGICA 2,8MM</span></h4>
-                    <img src="assets/img/produtos/cam.png" alt="">
+                    <img class="imgCam" src="assets/img/produtos/cam.png" alt="">
                 </article>
-
-
-                <div class="pdtDetalhes cam">
-                    <div class="pdtCardDetalhes cam">
-                        <h3>CÂMERA - Série 3000: Robustez</h3>
-                        <p>Com produtos mais elaborados, esta série é ideal para projetos que requerem maior robustez devido ao acabamento metálico das câmeras somado a alta qualidade de imagem.</p>
-                        <div class="toggleDetalhes cam"></div>
-                    </div>
-                </div>    
+                
                 <article class="pdtCard">
                     <h4 class="pdtTitle">CÂMERAS <span>AHD.HCVI.HDTVI.ANALOGICA VHD 3120 D G3</span></h4>
-                    <img src="assets/img/produtos/camTwo.png" alt="">
+                    <img class="imgCam2" src="assets/img/produtos/camTwo.png" alt="">
                 </article>
 
-
-                <div class="pdtDetalhes cam">
-                    <div class="pdtCardDetalhes cam">
-                        <h3>CÂMERA - Série 3000: Robustez</h3>
-                        <p>Com produtos mais elaborados, esta série é ideal para projetos que requerem maior robustez devido ao acabamento metálico das câmeras somado a alta qualidade de imagem.</p>
-                        <div class="toggleDetalhes cam"></div>
-                    </div>
-                </div>    
                 <article class="pdtCard">
                     <h4 class="pdtTitle">CÂMERAS <span>AHD.HCVI.HDTVI.ANALOGICA VHD 3130 B G3</span></h4>
-                    <img src="assets/img/produtos/camThree.png" alt="">
+                    <img class="imgCam3" src="assets/img/produtos/camThree.png" alt="">
                 </article>
 
 
@@ -473,7 +457,7 @@
                 </div>    
                 <article class="pdtCard">
                     <h4 class="pdtTitle">SENSORES DE ALARME <span><br>IVP e IVA - IVP 3000 PET</span></h4>
-                    <img class="sda" src="assets/img/produtos/sda.png" alt="">
+                    <img id="imgIvp3000" class="sda" src="assets/img/produtos/sda.png" alt="">
                 </article>
 
 
@@ -493,63 +477,169 @@
                 </div>    
                 <article class="pdtCard">
                     <h4 class="pdtTitle">SENSORES DE ALARME <span><br>IVP e IVA - IVP 4000 SMART</span></h4>
-                    <img class="sda" src="assets/img/produtos/sdaTwo.png" alt="">
+                    <img id="imgIvp4000" class="sda" src="assets/img/produtos/sdaTwo.png" alt="">
                 </article>
 
 
-
+                <div class="pdtDetalhes ivp3000mw">
+                    <div class="pdtCardDetalhes ivp3000mw">
+                        <h3>IVP 3000 MW EX</h3>
+                        <p>A tecnologia Intelbras de compensação real de temperatura, permite que o sensor seja instalado em locais com mudanças climáticas extremas. Além disso, ele possui o exclusivo suporte em aço inoxidável, que permite instalação em postes, paredes ou cantos sem alterar suas características originais, mesmo quando instalado em ambientes externos e severos.</p>
+                        <div class="toggleDetalhes ivp3000mw"></div>
+                    </div>
+                </div>    
                 <article class="pdtCard">
                     <h4 class="pdtTitle">SENSORES DE ALARME <span><br>IVP e IVA -  IVP 3000 MW EX</span></h4>
-                    <img class="sda" src="assets/img/produtos/sdaThree.png" alt="">
+                    <img id="imgIvp3000mw" class="sda" src="assets/img/produtos/sdaThree.png" alt="">
                 </article>
 
 
-
+                <div class="pdtDetalhes iva3070">
+                    <div class="pdtCardDetalhes iva3070">
+                        <h3>IVA 3070 X</h3>
+                        <p>Os sensores IVA 3070 X formam um perímetro virtual de 2 feixes com até 70 metros de extensão por trecho. Quando os dois feixes são interrompidos, o sensor IVA informa automaticamente a central de alarme.</p>
+                        <div class="toggleDetalhes iva3070"></div>
+                    </div>
+                </div> 
                 <article class="pdtCard">
                     <h4 class="pdtTitle">SENSORES DE ALARME <span><br>IVP e IVA -  IVA 3070 X</span></h4>
-                    <img class="sda" src="assets/img/produtos/sdaFour.png" alt="">
+                    <img id="imgIva3070" class="sda" src="assets/img/produtos/sdaFour.png" alt="">
                 </article>
 
 
-
+                <div class="pdtDetalhes mwx342">
+                    <div class="pdtCardDetalhes mwx342">
+                        <h3>DS-K1T342MWX</h3>
+                        <ul>
+                            <li>Capacidade máxima de 1500 faces e capacidade máxima de 3000 cartões</li>
+                            <li>Tela sensível ao toque LCD de 4,3 polegadas, lente grande angular de 2 megapixels, módulo de leitura de cartão M1 integrado</li>
+                            <li>Áudio bidirecional com software cliente, estação interna e estação principal; Suporta TCP/IP, Wi-Fi</li>
+                            <li>Suporta ISAPI, ISUP5.0</li>
+                            <li>Configuração via cliente web</li>
+                            <li>Reconhecimento facial. Distância: 0,3 m a 1,5 m</li>
+                            <li>Duração < 0,2 s/Usuário</li>
+                            <li>Taxa de precisão ≥ 99%</li>
+                            <li>Suporta reconhecimento de máscara</li>
+                        </ul>
+                        <div class="toggleDetalhes mwx342"></div>
+                    </div>
+                </div>
                 <article class="pdtCard">
                     <h4 class="pdtTitle">TERMINAL DE RECONHECIMENTO FACIAL <span><br>DS-K1T342MWX</span></h4>
-                    <img class="trf" src="assets/img/produtos/trf.png" alt="">
+                    <img id="img342mwx" class="trf" src="assets/img/produtos/trf.png" alt="">
                 </article>
 
 
-
+                <div class="pdtDetalhes mfwx342">
+                    <div class="pdtCardDetalhes mfwx342">
+                        <h3>DS-K1T342MFWX</h3>
+                        <ul>
+                            <li>Capacidade máxima de 1500 faces, capacidade máxima de 3000 impressões digitais e capacidade máxima de 3000 cartões</li>
+                            <li>Tela sensível ao toque LCD de 4,3 polegadas, lente grande angular de 2 megapixels, módulo de leitura de cartão M1 integrado</li>
+                            <li>Áudio bidirecional com software cliente, estação interna e estação principal; Suporta TCP/IP, Wi-Fi</li>
+                            <li>Suporta ISAPI, ISUP5.0</li>
+                            <li>Configuração via cliente web</li>
+                            <li>Reconhecimento facial. Distância: 0,3 m a 1,5 m</li>
+                            <li>Duração < 0,2 s/Usuário</li>
+                            <li>Taxa de precisão ≥ 99%</li>
+                            <li>Suporta reconhecimento de máscara</li>
+                        </ul>
+                        <div class="toggleDetalhes mfwx342"></div>
+                    </div>
+                </div>
                 <article class="pdtCard">
                     <h4 class="pdtTitle">TERMINAL DE RECONHECIMENTO FACIAL <span><br>DS-K1T342MFWX</span></h4>
-                    <img class="trf" src="assets/img/produtos/trfTwo.png" alt="">
+                    <img id="img342mfwx" class="trf" src="assets/img/produtos/trfTwo.png" alt="">
                 </article>
 
 
-
+                <div class="pdtDetalhes dx673">
+                    <div class="pdtCardDetalhes dx673">
+                        <h3>DS-K1T673DX</h3>
+                        <ul>
+                            <li>Tela de toque LCD de 7 polegadas, lente grande angular de 2 megapixels</li>
+                            <li>Distância de reconhecimento: 0,3 a 3 m</li>
+                            <li>Rosto reconhecimento duração ＜ 0.2 s/Usuário</li>
+                            <li>A taxa de precisão do reconhecimento facial ≥ 99%</li>
+                            <li>Detecção de máscara facial</li>
+                            <li>Capacidade de 50.000 faces, 10.000 impressões digitais (com módulo de impressão digital) e 150.000 eventos capacidade</li>
+                            <li>Suporta ISAPI, ISUP 5.0, TCP/IP (IPv4 e IPv6)</li>
+                            <li>Suporta o reconhecimento de uma única pessoa e várias pessoas (até 5 pessoas)</li>
+                        </ul>
+                        <div class="toggleDetalhes dx673"></div>
+                    </div>
+                </div>
                 <article class="pdtCard">
                     <h4 class="pdtTitle">TERMINAL DE RECONHECIMENTO FACIAL <span><br>DS-K1T673DX</span></h4>
-                    <img class="trf" src="assets/img/produtos/trfThree.png" alt="">
+                    <img id="img673dx" class="trf" src="assets/img/produtos/trfThree.png" alt="">
                 </article>
 
 
-
+                <div class="pdtDetalhes t671m">
+                    <div class="pdtCardDetalhes t671m">
+                        <h3>DS-K1T671M</h3>
+                        <ul>
+                            <li>Alerta de uso forçado de máscara: Se o rosto reconhecido não estiver de máscara, o dispositivo enviará um lembrete de voz e a autenticação ou terá falha.</li>
+                            <li>Alerta de uso de máscara facial: se o rosto reconhecido não estiver de máscara, o dispositivo enviará um lembrete de voz e a autenticação será válida.</li>
+                            <li>Tela sensível ao toque LCD de 7 polegadas, lente grande angular de 2 mp, módulo de leitura de cartão Mifare integrado</li>
+                            <li>Distância de reconhecimento facial (sem máscara facial): 0,3 m a 3 m, Duração ＜ 0,2 s/Usuário, Taxa de precisão ≥ 99%</li>
+                            <li>Máx.10.000 faces e Máx.10.000 cartões.</li>
+                            <li>Áudio bidirecional com software cliente, estação interna e estação principal</li>
+                            <li>Suporta TCP/IP e protocolo SIP</li>
+                            <li>Configuração através do cliente web</li>
+                            <li>Suporta protocolo ISAPI e ISUP5.0</li>
+                            <li>Índice de proteção IP65</li>
+                        </ul>
+                        <div class="toggleDetalhes t671m"></div>
+                    </div>
+                </div>  
                 <article class="pdtCard">
                     <h4 class="pdtTitle">TERMINAL DE RECONHECIMENTO FACIAL <span><br>DS-K1T671M-L</span></h4>
-                    <img class="trf" src="assets/img/produtos/trfFour.png" alt="">
+                    <img id="imgT671m" class="trf" src="assets/img/produtos/trfFour.png" alt="">
                 </article>
 
 
-
+                <div class="pdtDetalhes t671mf">
+                    <div class="pdtCardDetalhes t671mf">
+                        <h3>DS-K1T671MF</h3>
+                        <ul>
+                            <li>Alerta de uso forçado de máscara: Se o rosto reconhecido não estiver de máscara, o dispositivo enviará um lembrete de voz e a autenticação ou terá falha.</li>
+                            <li>Alerta de uso de máscara facial: se o rosto reconhecido não estiver de máscara, o dispositivo enviará um lembrete de voz e a autenticação será válida.</li>
+                            <li>Tela sensível ao toque LCD de 7 polegadas, lente grande angular de 2 mp, módulo de leitura de cartão Mifare integrado</li>
+                            <li>Distância de reconhecimento facial (sem máscara facial): 0,3 m a 3 m, Duração ＜ 0,2 s/Usuário, Taxa de precisão ≥ 99%</li>
+                            <li>Máx.10.000 faces, Máx.10.000 cartões e Máx. 5.000 impressões digitais</li>
+                            <li>Áudio bidirecional com software cliente, estação interna e estação principal</li>
+                            <li>Suporta TCP/IP e protocolo SIP</li>
+                            <li>Configuração através do cliente web</li>
+                            <li>Suporta protocolo ISAPI e ISUP5.0</li>
+                            <li>Índice de proteção IP65</li>
+                        </ul>
+                        <div class="toggleDetalhes t671mf"></div>
+                    </div>
+                </div>
                 <article class="pdtCard">
                     <h4 class="pdtTitle">TERMINAL DE RECONHECIMENTO FACIAL <span><br>DS-K1T671MF-L</span></h4>
-                    <img class="trf" src="assets/img/produtos/trfFive.png" alt="">
+                    <img id="imgT671mf" class="trf" src="assets/img/produtos/trfFive.png" alt="">
                 </article>
 
-
-
+                
+                <div class="pdtDetalhes stm8000">
+                    <div class="pdtCardDetalhes stm8000">
+                        <h3>SISTEMA DE ALARME SEM FIO 8000</h3>
+                        <p>Qualidade superior e alto desempenho de detecção, proporcionando solução completa contra intrusão.</p>
+                        <ul>
+                            <li>Solução contra intrusão com alta tecnologia</li>
+                            <li>Identificação do disparo em tempo real</li>
+                            <li>Interação com a central de alarme</li>
+                            <li>Máxima segurança</li>
+                            <li>Configuração remota</li>
+                        </ul>
+                        <div class="toggleDetalhes stm8000"></div>
+                    </div>
+                </div>
                 <article class="pdtCard">
                     <h4 class="pdtTitle">SISTEMA DE ALARME SEM FIO <span>AMT 8000 - XSS 8000 <br> XAT 8000 - XAC 8000 <br> XAS 8000 - IVP 8000 PET CAM.</span></h4>
-                    <img src="assets/img/produtos/sasf.png" alt="">
+                    <img id="imgStm8000" src="assets/img/produtos/sasf.png" alt="">
                 </article>
 
 
@@ -615,12 +705,12 @@
                 </article>
             </section>
             <section id="formCttBox">
-                <form id="formCtt" action="">
+                <form id="formCtt" action="assets/php/send_email.php" method="POST">
                     <h4>Nos Envie Uma Mensagem!</h4>
-                    <input type="text" required placeholder="Nome:" name="" id="">
-                    <input type="number" required placeholder="Telefone:" name="" id="">
-                    <input type="text" required placeholder="Assunto:" name="" id="">
-                    <textarea name="" required placeholder="Mensagem:" id=""></textarea>
+                    <input type="email" required placeholder="E-mail:" name="email">
+                    <input type="number" required placeholder="Telefone:" name="numero" maxlength="11" minlength="11">
+                    <input type="text" required placeholder="Assunto:" name="assunto">
+                    <textarea required placeholder="Mensagem:" name="mensagem" ></textarea>
                     <button>Enviar</button>
                 </form>
             </section>
@@ -632,12 +722,12 @@
         <section id="navBarFooter">
             <div onclick="menuT()" class="toggleFooter"></div>
             <ul id="navFooterLinks">
-                <li class="navLinkFooter"><a href="">Home</a></li>
-                <li class="navLinkFooter"><a href="">Visão</a></li>
-                <li class="navLinkFooter"><a href="">Serviços</a></li>
-                <li class="navLinkFooter"><a href="">Empresa</a></li>
-                <li class="navLinkFooter"><a href="">Produtos</a></li>
-                <li class="navLinkFooter"><a href="">Contato</a></li>
+                <li class="navLinkFooter"><a href="#sctOne">Home</a></li>
+                <li class="navLinkFooter"><a href="#infoOne">Visão</a></li>
+                <li class="navLinkFooter"><a href="#sctFour">Serviços</a></li>
+                <li class="navLinkFooter"><a href="#sctFive ">Empresa</a></li>
+                <li class="navLinkFooter"><a href="#sctSix">Produtos</a></li>
+                <li class="navLinkFooter"><a href="#infoContato">Contato</a></li>
             </ul>
         </section>
         <footer id="footerAx">
