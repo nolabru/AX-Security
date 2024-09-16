@@ -32,6 +32,12 @@ body.active{
     right: 30px;
 }
 
+/* Elementos Scroll ---------------------------------------------------- */
+
+#boasVindas, #redesSociais, #infoOne h1, .cardVisao, .cardVtg{
+    visibility: hidden;
+}
+
 /* Seção 1 ------------------------------------------------------------------ */
 
 #sctOne{
@@ -146,7 +152,6 @@ body.active{
     display: flex;
     flex-direction: column;
     align-items: center;
-    visibility: hidden;
 }
 
 #boasVindas h1{
@@ -333,10 +338,6 @@ body.active{
     right: -45px;
     bottom: 42%;
     z-index: 1;
-}
-
-.conector.n{
-    display: none;
 }
 
 /* Seção Quatro ------------------------------------------------------------------ */

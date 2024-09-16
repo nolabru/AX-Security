@@ -355,7 +355,9 @@ function stm8000(){
     }
 }
 
-window.revelar = ScrollReveal({reset:true});
+window.revelar = ScrollReveal({reset:true,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)'
+});
 
 revelar.reveal("#boasVindas", { 
     duration: 1000,
@@ -363,3 +365,204 @@ revelar.reveal("#boasVindas", {
     distance: "90px",
     origin: "top",
 });
+
+revelar.reveal("#redesSociais", {
+    duration: 1000,
+    delay: 700,
+    distance: "50px",
+    origin: "top"
+});
+
+revelar.reveal("#infoOne h1", {
+    duration: 1000,
+    delay: 300,
+    distance: "70px",
+    origin: "left"
+});
+
+revelar.reveal(".cardVisao", {
+    duration: 700,
+    delay: 500,
+    distance: "70px",
+    origin: "top"
+});
+
+revelar.reveal(".cardVisao.est", {
+    delay: 600,
+});
+
+revelar.reveal(".cardVtg",{
+    duration: 1000,
+    delay: 500,
+    distance: "80px",
+    origin: "left"
+});
+
+revelar.reveal(".cardVtg.two",{
+    delay: 600
+});
+
+revelar.reveal(".cardVtg.three",{
+    delay: 700
+});
+
+revelar.reveal(".cardVtg.four",{
+    delay: 800
+});
+
+revelar.reveal('.svcImg',{
+    duration: 2000,
+    delay: 500,
+    distance: "50px",
+});
+
+revelar.reveal('.svcInfos',{
+    duration: 1500,
+    delay: 500,
+    distance: "70px",
+});
+
+revelar.reveal('.svcImg.seg',{
+    origin: "left"
+});
+
+revelar.reveal('.svcInfos.seg',{
+    delay: 600,
+    origin: "top"
+});
+
+revelar.reveal('.svcImg.ala',{
+    delay: 650,
+    origin: "bottom"
+});
+
+revelar.reveal('.svcInfos.ala',{
+    delay: 700,
+    origin: "right"
+});
+
+revelar.reveal('.svcImg.cer',{
+    delay: 750,
+    origin: "right"
+});
+
+revelar.reveal('.svcInfos.cer',{
+    delay: 800,
+    origin: "bottom"
+});
+
+revelar.reveal('.svcImg.ist',{
+    delay: 850,
+    origin: "left"
+});
+
+revelar.reveal('.svcInfos.ist',{
+    delay: 900,
+    origin: "top"
+});
+
+revelar.reveal('.svcImg.acs',{
+    delay: 950,
+    origin: "left"
+});
+
+revelar.reveal('.svcInfos.acs',{
+    delay: 1000,
+    origin: "top"
+});
+
+revelar.reveal('.svcImg.evt',{
+    delay: 1050,
+    origin: "right"
+});
+
+revelar.reveal('.svcInfos.evt',{
+    delay: 1100,
+    origin: "bottom"
+});
+
+revelar.reveal('.svcImg.axc',{
+    delay: 1150,
+    origin: "left"
+});
+
+revelar.reveal('.svcInfos.axc',{
+    delay: 1200,
+    origin: "top"
+});
+
+revelar.reveal('.svcImg.cam',{
+    delay: 1250,
+    origin: "right"
+});
+
+revelar.reveal('.svcInfos.cam',{
+    delay: 1300,
+    origin: "bottom"
+});
+
+revelar.reveal('.info.two > a',{
+    duration: 1000,
+    delay: 300,
+    distance: "70px",
+    origin: "bottom"
+});
+
+revelar.reveal('.info.three > a',{
+    duration: 1000,
+    delay: 300,
+    distance: "70px",
+    origin: "bottom"
+});
+
+revelar.reveal('#sctFive > section', {
+    duration: 1000,
+    delay: 200,
+    distance: "60px"
+});
+
+revelar.reveal('#empImg',{
+    origin: "left"
+});
+
+revelar.reveal('#empDescricao',{
+    origin: 'bottom'
+});
+
+revelar.reveal('.pdtCard ',{
+    duration: 1000,
+    delay: 400,
+    distance: "70px",
+    origin: "left"
+});
+
+revelar.reveal('#clientes', {
+    duration: 1000,
+    delay: 150,
+    distance: "70px",
+    origin: "top"
+});
+
+revelar.reveal(".info.four",{
+    duration: 1000,
+    delay: 300,
+    distance: "70px",
+    origin: "bottom"
+});
+
+revelar.reveal('#infoContato',{
+    duration: 1000,
+    delay: 300,
+    distance: "70px",
+    origin: "top"
+});
+
+revelar.reveal('#contato > section',{
+    duration: 1000,
+    delay: 200,
+    distance: "70px",
+});
+
+revelar.reveal('#dadosCtt',{
+    origin: 'left'
+})
