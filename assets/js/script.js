@@ -359,6 +359,8 @@ window.revelar = ScrollReveal({reset:true,
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 
+// ----------------------------------------------------
+
 revelar.reveal("#boasVindas", { 
     duration: 1000,
     delay: 200,
@@ -373,133 +375,149 @@ revelar.reveal("#redesSociais", {
     origin: "top"
 });
 
+// ----------------------------------------------------
+
 revelar.reveal("#infoOne h1", {
     duration: 1000,
-    delay: 300,
+    delay: 100,
     distance: "70px",
     origin: "left"
 });
 
+// ----------------------------------------------------
+
 revelar.reveal(".cardVisao", {
     duration: 700,
-    delay: 500,
+    delay: 300,
     distance: "70px",
     origin: "top"
 });
 
 revelar.reveal(".cardVisao.est", {
-    delay: 600,
+    delay: 400,
 });
+
+// ----------------------------------------------------
 
 revelar.reveal(".cardVtg",{
     duration: 1000,
-    delay: 500,
+    delay: 200,
     distance: "80px",
     origin: "left"
 });
 
 revelar.reveal(".cardVtg.two",{
-    delay: 600
+    delay: 250
 });
 
 revelar.reveal(".cardVtg.three",{
-    delay: 700
+    delay: 300
 });
 
 revelar.reveal(".cardVtg.four",{
-    delay: 800
+    delay: 350
 });
+
+// ----------------------------------------------------
 
 revelar.reveal('.svcImg',{
     duration: 2000,
-    delay: 500,
     distance: "50px",
 });
 
 revelar.reveal('.svcInfos',{
     duration: 1500,
-    delay: 500,
     distance: "70px",
 });
 
 revelar.reveal('.svcImg.seg',{
+    delay: 150,
     origin: "left"
 });
 
 revelar.reveal('.svcInfos.seg',{
-    delay: 600,
+    delay: 175,
     origin: "top"
 });
 
 revelar.reveal('.svcImg.ala',{
-    delay: 650,
+    delay: 150,
     origin: "bottom"
 });
 
 revelar.reveal('.svcInfos.ala',{
-    delay: 700,
+    delay: 175,
     origin: "right"
 });
 
 revelar.reveal('.svcImg.cer',{
-    delay: 750,
+    delay: 200,
     origin: "right"
 });
 
 revelar.reveal('.svcInfos.cer',{
-    delay: 800,
+    delay: 225,
     origin: "bottom"
 });
 
 revelar.reveal('.svcImg.ist',{
-    delay: 850,
+    delay: 200,
     origin: "left"
 });
 
 revelar.reveal('.svcInfos.ist',{
-    delay: 900,
+    delay: 225,
     origin: "top"
 });
 
 revelar.reveal('.svcImg.acs',{
-    delay: 950,
+    delay: 150,
     origin: "left"
 });
 
 revelar.reveal('.svcInfos.acs',{
-    delay: 1000,
+    delay: 175,
     origin: "top"
 });
 
 revelar.reveal('.svcImg.evt',{
-    delay: 1050,
+    delay: 150,
     origin: "right"
 });
 
 revelar.reveal('.svcInfos.evt',{
-    delay: 1100,
+    delay: 175,
     origin: "bottom"
 });
 
 revelar.reveal('.svcImg.axc',{
-    delay: 1150,
+    delay: 200,
     origin: "left"
 });
 
 revelar.reveal('.svcInfos.axc',{
-    delay: 1200,
+    delay: 225,
     origin: "top"
 });
 
 revelar.reveal('.svcImg.cam',{
-    delay: 1250,
+    delay: 200,
     origin: "right"
 });
 
 revelar.reveal('.svcInfos.cam',{
-    delay: 1300,
+    delay: 225,
     origin: "bottom"
 });
+
+revelar.reveal('.sctsTitle',{
+    duration: 1000,
+    delay: 100,
+    distance: "70px",
+    origin: "left"
+});
+
+// ----------------------------------------------------
 
 revelar.reveal('.info.two > a',{
     duration: 1000,
@@ -515,6 +533,8 @@ revelar.reveal('.info.three > a',{
     origin: "bottom"
 });
 
+// ----------------------------------------------------
+
 revelar.reveal('#sctFive > section', {
     duration: 1000,
     delay: 200,
@@ -529,12 +549,23 @@ revelar.reveal('#empDescricao',{
     origin: 'bottom'
 });
 
+// ----------------------------------------------------
+
+revelar.reveal("#pdtDescricao",{
+    duration: 1000,
+    delay: 100,
+    distance: "70px",
+    origin: "left"
+});
+
 revelar.reveal('.pdtCard ',{
     duration: 1000,
     delay: 400,
     distance: "70px",
     origin: "left"
 });
+
+// ----------------------------------------------------
 
 revelar.reveal('#clientes', {
     duration: 1000,
@@ -543,12 +574,16 @@ revelar.reveal('#clientes', {
     origin: "top"
 });
 
+// ----------------------------------------------------
+
 revelar.reveal(".info.four",{
     duration: 1000,
     delay: 300,
     distance: "70px",
     origin: "bottom"
 });
+
+// ----------------------------------------------------
 
 revelar.reveal('#infoContato',{
     duration: 1000,
@@ -566,3 +601,19 @@ revelar.reveal('#contato > section',{
 revelar.reveal('#dadosCtt',{
     origin: 'left'
 })
+
+// ----------------------------------------------------
+
+revelar.reveal('#footerTxt',{
+    duration: 1000,
+    delay: 100,
+    distance: "70px",
+    origin: "left"
+});
+
+revelar.reveal('#footerAx > img',{
+    duration: 1000,
+    delay: 100,
+    distance: "70px",
+    origin: "right"
+});
