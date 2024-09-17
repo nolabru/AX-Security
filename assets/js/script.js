@@ -574,7 +574,7 @@ revelar.reveal('#clientes', {
 
 revelar.reveal(".info.four",{
     duration: 1000,
-    delay: 300,
+    delay: 400,
     distance: "70px",
     origin: "bottom"
 });
@@ -583,7 +583,7 @@ revelar.reveal(".info.four",{
 
 revelar.reveal('#infoContato',{
     duration: 1000,
-    delay: 300,
+    delay: 800,
     distance: "70px",
     origin: "top"
 });
