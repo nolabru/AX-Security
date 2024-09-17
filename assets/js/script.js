@@ -361,13 +361,6 @@ window.revelar = ScrollReveal({reset:true,
 
 // ----------------------------------------------------
 
-revelar.reveal("#boasVindas", { 
-    duration: 1000,
-    delay: 200,
-    distance: "90px",
-    origin: "top",
-});
-
 revelar.reveal("#redesSociais", {
     duration: 1000,
     delay: 700,
@@ -447,12 +440,12 @@ revelar.reveal('.svcImg.ala',{
 
 revelar.reveal('.svcInfos.ala',{
     delay: 175,
-    origin: "right"
+    origin: "left"
 });
 
 revelar.reveal('.svcImg.cer',{
     delay: 200,
-    origin: "right"
+    origin: "left"
 });
 
 revelar.reveal('.svcInfos.cer',{
@@ -482,7 +475,7 @@ revelar.reveal('.svcInfos.acs',{
 
 revelar.reveal('.svcImg.evt',{
     delay: 150,
-    origin: "right"
+    origin: "left"
 });
 
 revelar.reveal('.svcInfos.evt',{
@@ -502,7 +495,7 @@ revelar.reveal('.svcInfos.axc',{
 
 revelar.reveal('.svcImg.cam',{
     delay: 200,
-    origin: "right"
+    origin: "left"
 });
 
 revelar.reveal('.svcInfos.cam',{
@@ -615,5 +608,5 @@ revelar.reveal('#footerAx > img',{
     duration: 1000,
     delay: 100,
     distance: "70px",
-    origin: "right"
+    origin: "top"
 });

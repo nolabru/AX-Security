@@ -32,27 +32,21 @@ body.active{
     right: 30px;
 }
 
-/* Elementos Scroll ---------------------------------------------------- */
-
-#boasVindas, #redesSociais, #infoOne h1, .cardVisao, .cardVtg{
-    visibility: hidden;
-}
-
 /* Seção 1 ------------------------------------------------------------------ */
 
 #sctOne{
-    width: 100%;
+    width: 100% ;
     height: 100vh;
     padding: 50px 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;    
-    background: linear-gradient(90deg, #1e73becf,#35dab4c1), 
-    url(assets/bannerAx.jpg);
+    background: url(/bannerAx.jpg);
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+    transition: background .8s ease-in-out;
 }
 
 /* Toggle Menu -------------------------------------------------------- */
@@ -146,12 +140,33 @@ body.active{
     color: var(--cor3);
 }
 
+.sliderBtn{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: url(assets/arrowSlider.png);
+    background-size: cover;
+    top: 45%;
+    cursor: pointer;
+}
+.sliderBtn.back{
+    left: 100px;
+    transform: rotate(180deg);
+}
+.sliderBtn.go{
+    right: 100px;
+}
+
 /* Boas Vindas --------------------------------------------- */
 
 #boasVindas{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#boasVindas.off{
+    display: none;
 }
 
 #boasVindas h1{
@@ -837,6 +852,7 @@ body.active{
 #clientes{
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -847,11 +863,6 @@ body.active{
     width: 200px;
     height: 200px;
 }
-
-.cltImg.noView{
-    display: none;
-}
-
 /* Faixa Informações Quatro ------------------------------------------------------------------ */
 
 .info.four{
@@ -1111,7 +1122,7 @@ input[type=number]::-webkit-inner-spin-button{
 
 /* Responsividade ------------------------------------------------------------- */
 
-@media(1800px <= width){
+@media(min-width: 1800px){
     #sctFour{
         padding: 40px 200px 130px 200px;
     }
@@ -1121,7 +1132,8 @@ input[type=number]::-webkit-inner-spin-button{
     }
 
     #sctSeven{
-        padding: 80px 300px;
+        padding: 80px 20%;
+        justify-content: center;
     }
 }
 
@@ -1130,6 +1142,10 @@ input[type=number]::-webkit-inner-spin-button{
 @media(1300px >= width){
     #sctOne{
         padding: 50px 100px;
+    }
+
+    .sliderBtn{
+        display: none;
     }
 
     #sctThree{
@@ -1239,10 +1255,6 @@ input[type=number]::-webkit-inner-spin-button{
         transform: rotate(90deg);
     }
 
-    .cltImg.view.five{
-        display: none;
-    }
-
     .svcCardDetalhes{
         width: 75%;
     }
@@ -1250,6 +1262,11 @@ input[type=number]::-webkit-inner-spin-button{
 
 /* Media 1000PX ------------------------------------------ */
 @media(1000px >= width){
+
+    #sctOne{
+        background-position: center;
+    }
+
     .toggleMenu{
         width: 30px;
         height: 30px;
@@ -1402,10 +1419,6 @@ input[type=number]::-webkit-inner-spin-button{
 /* Media 900PX --------------------------------------- */
 
 @media(900px >= width){
-    .cltImg.view.four{
-        display: none;
-    }
-
     #contato{
         height: 500px;
     }
@@ -1556,11 +1569,7 @@ input[type=number]::-webkit-inner-spin-button{
     }
 
     #sctSeven{
-        padding: 80px 50px 40px 50px;
-    }
-
-    .cltImg.view.three{
-        display: none;
+        padding: 80px 20% 40px 20%;
     }
 
     .infoRsTitle{
@@ -1663,7 +1672,7 @@ input[type=number]::-webkit-inner-spin-button{
     }
 
     #sctSeven{
-        padding: 80px 50px 45px 50px;
+        padding: 80px 35px  45px 35px;
     }
 
     
