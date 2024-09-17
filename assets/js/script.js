@@ -13,6 +13,9 @@ function menuT(){
         toggles[toggle].classList.toggle('active');
         toggle ++;
     }   
+
+    navLink = document.querySelector('.navLink > a');
+    navLink.addEventListener('click', offNav);
 }
 
 // Abrir Instagram -----------------------

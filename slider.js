@@ -9,7 +9,6 @@ let currentIndex = 0;
 
 function trocarSlide(direction) {
     const imgs = [
-        'url(bannerAx.jpg)' ,
         'url(axBanner1.jpg)',
         'url(axBanner2.jpg)',
         'url(axBanner3.jpg)'
@@ -23,10 +22,6 @@ function trocarSlide(direction) {
 
     // Aplica a imagem de fundo ao elemento `secao`
     if (secao) {
-        if(imgs[currentIndex] == "url(bannerAx.jpg)"){
-            boasVindas.classList.remove('off');
-            boasVindas.style.transition = "all .5s ease-in-out";
-        }
         secao.style.backgroundImage = imgs[currentIndex];
     }
 }
