@@ -37,18 +37,197 @@ body.active{
 #sctOne{
     width: 100% ;
     height: 100vh;
-    padding: 50px 160px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;    
-    background: url(assets/bannerAx.jpg);
+    align-items: center;  
+    background: #23262d;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
-    transition: background .8s ease-in-out;
+}
+/* Slider -------------------------------------------------------- */
+
+.slider{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+}
+  
+.manual-navigation{
+    position: absolute;
+    width: 100%;
+    margin-top: 800px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    padding: 3.5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+  
+.manual-btn:hover{
+    background: #fff;
+}
+  
+#radio:checked ~ .first{
+    margin-left: 0;
+}
+  
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+  
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+  
+.navigation-auto div{
+    border: .5px solid #fff;
+    padding: 3px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+  
+.navigation-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 800px;
+    display: flex;
+    justify-content: center;
+}
+  
+.navigation-auto div:not(:last-child){
+    margin-right: 37.5px;
+}
+  
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff  ;
+}
+
+#boasVindas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#boasVindas h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+}  
+
+#boasVindas h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#btnBv{
+    border: 1px solid;
+    border-image: linear-gradient(90deg, var(--cor2), var(--cor1));
+    border-image-slice: 1;
+    color: #fff;
+    margin-top: 40px;
+    padding: 10px 30px;
+    transition: all .4s ease-in-out;
+}
+
+#btnBv:hover{
+    transform: translateY(5px);
+    border: 1px solid #fff;
+    background: #fff;
+    color: var(--cor3);
+}
+
+.txtSlide{
+    position: absolute;
+    color: #fff;
+}
+  
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff  ;
+}
+
+.txtSlide.one{
+    font-size: 78px;
+    line-height: 65px;
+    font-weight: bold;
+    top: 190px;
+    left: 660px;
+}  
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff  ;
+}
+
+#titleSlide{
+    position: absolute;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 95px;
+    top: 150px;
+    left: 845px;
+    line-height: 95px;
+    color: #fff;
+}
+
+.txtSlide.two{
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+    top: 355px;
+    left: 845px;
+    color: #3ea5ff;
+}  
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff  ;
+}
+
+.txtSlide.three{
+    font-size: 55px;
+    line-height: 65px;
+    font-weight: bold;
+    top: 185px;
+    left: 225px;
+}  
+  
 /* Toggle Menu -------------------------------------------------------- */
 
 .toggleMenu{
@@ -60,10 +239,12 @@ body.active{
 #navBar{
     width: 100%;
     height: 55px;  
-    padding: 0 0 0 35px;
+    padding: 0 185px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    top: 50px;
 }
 
 #axLogo{
@@ -140,66 +321,12 @@ body.active{
     color: var(--cor3);
 }
 
-.sliderBtn{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    background: url(assets/arrowSlider.png);
-    background-size: cover;
-    top: 45%;
-    cursor: pointer;
-}
-.sliderBtn.back{
-    left: 100px;
-    transform: rotate(180deg);
-}
-.sliderBtn.go{
-    right: 100px;
-}
-
-/* Boas Vindas --------------------------------------------- */
-
-#boasVindas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#boasVindas.off{
-    display: none;
-}
-
-#boasVindas h1{
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #fff;
-}  
-
-#boasVindas h3{
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
-}
-
-#btnBv{
-    border: 1px solid;
-    border-image: linear-gradient(90deg, var(--cor2), var(--cor1));
-    border-image-slice: 1;
-    color: #fff;
-    margin-top: 40px;
-    padding: 10px 30px;
-    transition: all .4s ease-in-out;
-}
-
-#btnBv:hover{
-    transform: translateY(5px);
-    border: 1px solid #fff;
-    background: #fff;
-    color: var(--cor3);
-}
-
 /* Ícones Redes Sociais --------------------------------------------- */
+
+.redesSociais{
+    position: absolute;
+    bottom: 40px;
+}
 
 .iconsRs{
     margin: 0 10px;
@@ -899,6 +1026,12 @@ body.active{
     width: 100%;
     height: 200px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#infoContato > section{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1141,10 +1274,6 @@ input[type=number]::-webkit-inner-spin-button{
 @media(1300px >= width){
     #sctOne{
         padding: 50px 100px;
-    }
-
-    .sliderBtn{
-        display: none;
     }
 
     #sctThree{
@@ -1807,7 +1936,7 @@ input[type=number]::-webkit-inner-spin-button{
     }
 
     #footerAx > #redesSociais{
-        margin-top: 20px;
+        margin: 20px;
     }
 
     .svcCardDetalhes, #tpEvt, .pdtCardDetalhes{

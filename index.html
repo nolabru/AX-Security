@@ -6,7 +6,7 @@
         <title>AX Security</title>
         <link rel="shortcut icon" href="assets/img/geral/ax.ico" type="image/x-icon">
         <script src="https://unpkg.com/scrollreveal"></script>
-        <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="stylesheet" href="assets/css/    global.css">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
@@ -14,6 +14,47 @@
         <a href="https://api.whatsapp.com/send?phone=5511933358899" target="_blank" id="btnWhatsapp" class="btnFixed"></a>
         <section id="sctOne">
             <div onclick="menuT()" class="toggleMenu"></div>
+            <section class="slider">
+                <section class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="slide first">
+                        <section id="boasVindas">
+                            <h1>Bem Vindo a AX Security</h1>
+                            <h3>Uma Empresa Especializada em Sistemas de Monitoramento.</h3>
+                            <a id="btnBv" href="https://api.whatsapp.com/send?phone=5511933358899" target="_blank">Solicite um Orçamento</a>
+                        </section>
+                        <img src="assets/css/assets/bannerAx.jpg" alt="">
+                      </div>
+                      <div class="slide">
+                        <p class="txtSlide one">Você e a sua <br> família merecem <br> mais segurança.</p>
+                        <img src="assets/css/assets/axBanner1.jpg" alt="">
+                      </div>
+                      <div class="slide">
+                        <h1 id="titleSlide">cercas <br> elétricas</h1>
+                        <p class="txtSlide two">+ segurança para <br> você e sua família.</p>
+                        <img src="assets/css/assets/axBanner2.jpg" alt="">
+                      </div>
+                      <div class="slide">
+                        <p class="txtSlide three">Temos a solução <br> perfeita para <br> sua empresa <br> e residência.</p>
+                        <img src="assets/css/assets/axBanner3.jpg" alt="">
+                      </div>
+                      <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                      </div>
+                      <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                      </div>
+                </section>
+            </section>
             <header id="navBar">
                 <a id="axLogo" href=""><img src="assets/img/geral/Axlogo.png" alt="LogoAx" title="Logo Ax Security"></a>
                 <ul id="navBarLinks">
@@ -26,14 +67,7 @@
                     <li id="navBtn"><a href="https://api.whatsapp.com/send?phone=5511933358899" target="_blank">Solicite um Orçamento</a></li>
                 </ul>
             </header>
-            <span class="sliderBtn go"></span>
-            <span class="sliderBtn back"></span>
-            <section id="boasVindas">
-                <h1>Bem Vindo a AX Security</h1>
-                <h3>Uma Empresa Especializada em Sistemas de Monitoramento.</h3>
-                <a id="btnBv" href="https://api.whatsapp.com/send?phone=5511933358899" target="_blank">Solicite um Orçamento</a>
-            </section>  
-            <section id="redesSociais">
+            <section class="redesSociais">
                 <a href="https://www.facebook.com/Axsecutiry" target="_blank">
                     <svg class="iconsRs f" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11 0C4.92492 0 0 4.92492 0 11C0 16.1586 3.55168 20.4873 8.34284 21.6762V14.3616H6.07464V11H8.34284V9.55152C8.34284 5.80756 10.0373 4.0722 13.713 4.0722C14.41 4.0722 15.6125 4.20904 16.1044 4.34544V7.39244C15.8448 7.36516 15.3938 7.35152 14.8337 7.35152C13.0302 7.35152 12.3332 8.03484 12.3332 9.81112V11H15.9262L15.3089 14.3616H12.3332V21.9195C17.78 21.2617 22.0004 16.6241 22.0004 11C22 4.92492 17.0751 0 11 0Z"/>
@@ -658,8 +692,10 @@
             <div class="elfsight-app-f6fa9d0d-dd59-48c6-a478-655c2b6e200b" data-elfsight-app-lazy></div>
         </section>
         <section id="infoContato">
-            <h1 class="infoRsTitle">Não perca tempo</h1>
-            <p class="infoRsDescricao">Entre em contato conosco!</p>    
+            <section>
+                <h1 class="infoRsTitle">Não perca tempo</h1>
+                <p class="infoRsDescricao">Entre em contato conosco!</p>
+            </section> 
         </section>
         <section id="contato">
             <section id="dadosCtt"> 
@@ -729,13 +765,13 @@
             <img src="assets/img/geral/Axlogo.png" alt="">
         </footer>
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/slider.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script>
             particlesJS.load('particles-js', 'assets/js/particles.json', function() {
             console.log('callback - particles.js config loaded');
         });
         </script>
-        <script src="slider.js"></script>
         <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     </body>
 </html> 

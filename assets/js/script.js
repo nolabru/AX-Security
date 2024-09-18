@@ -364,13 +364,26 @@ window.revelar = ScrollReveal({reset:true,
 
 // ----------------------------------------------------
 
-revelar.reveal("#redesSociais", {
+revelar.reveal("#boasVindas", {
+    duration: 1000,
+    delay: 500,
+    distance: "50px",
+    origin: "top"
+});
+
+revelar.reveal(".navigation-auto", {
+    duration: 1000,
+    delay: 600,
+    distance: "50px",
+    origin: "top"
+});
+
+revelar.reveal(".redesSociais", {
     duration: 1000,
     delay: 700,
     distance: "50px",
     origin: "top"
 });
-
 // ----------------------------------------------------
 
 revelar.reveal("#infoOne h1", {
@@ -581,25 +594,6 @@ revelar.reveal(".info.four",{
 
 // ----------------------------------------------------
 
-revelar.reveal('#infoContato',{
-    duration: 1000,
-    delay: 800,
-    distance: "70px",
-    origin: "top"
-});
-
-revelar.reveal('#contato > section',{
-    duration: 1000,
-    delay: 200,
-    distance: "70px",
-});
-
-revelar.reveal('#dadosCtt',{
-    origin: 'left'
-})
-
-// ----------------------------------------------------
-
 revelar.reveal('#footerTxt',{
     duration: 1000,
     delay: 100,
@@ -611,5 +605,12 @@ revelar.reveal('#footerAx > img',{
     duration: 1000,
     delay: 100,
     distance: "70px",
+    origin: "top"
+});
+
+revelar.reveal("#redesSociais", {
+    duration: 1000,
+    delay: 700,
+    distance: "50px",
     origin: "top"
 });
