@@ -180,6 +180,7 @@ body.active{
     text-transform: uppercase;
     font-weight: 400;
     color: #fff;
+    width: 120%;
 }  
 
 .boasVindas h3{
@@ -982,8 +983,7 @@ body.active{
     height: 170px;
     position: absolute;
     left: 100%;
-    border: 1px solid green;
-    animation: autoRun 20s linear infinite;
+    animation: autoRun 25s linear infinite;
     animation-delay: var(--delay);
 }
 
@@ -1002,7 +1002,7 @@ body.active{
     }
 
     to{
-        left: -200px;
+        left: -1500px;
     }
 }
 
@@ -1011,7 +1011,7 @@ body.active{
 
 .info.four{
     display: flex;
-    margin-top: 220px;
+    margin-top: 185px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1496,7 +1496,7 @@ input[type=number]::-webkit-inner-spin-button{
         display: none;
     }
 
-    .slider.finalizarSlider{
+    .slider{
         display: none;
     }
     
@@ -1756,6 +1756,9 @@ input[type=number]::-webkit-inner-spin-button{
 
 /* Media 620PX ------------------------------------------- */
 @media(620px >= width){
+    .boasVindas h1{
+        width: 100%;
+    }
     .conector.n{
         display: block;
     }
