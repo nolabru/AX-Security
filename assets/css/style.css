@@ -35,14 +35,12 @@ body.active{
 /* Seção 1 ------------------------------------------------------------------ */
 
 #sctOne{
-    width: 100% ;
+    width: 100%; 
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;  
     background: #23262d;
-    background-attachment: fixed;
-    background-size: cover;
     position: relative;
 }
 /* Slider -------------------------------------------------------- */
@@ -72,11 +70,41 @@ body.active{
 .slide img{
     width: 100%;
 }
+
+.imgSlide{
+    width: 100%;
+    height: 100%;
+}
+
+.imgSlide.one{
+    background: url(assets/bannerAx.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imgSlide.two{
+    background: url(assets/axBanner1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imgSlide.three{
+    background: url(assets/axBanner2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imgSlide.four{
+    background: url(assets/axBanner3.jpg);
+    background-size: cover;
+    background-attachment: fixed;   
+}
   
 .manual-navigation{
     position: absolute;
     width: 100%;
-    margin-top: 800px;
+    bottom: 0;
+    margin-bottom: 10%;
     display: flex;
     justify-content: center;
 }
@@ -122,7 +150,8 @@ body.active{
 .navigation-auto{
     position: absolute;
     width: 100%;
-    margin-top: 800px;
+    bottom: 0;
+    margin-bottom: 10%;
     display: flex;
     justify-content: center;
 }
@@ -135,24 +164,25 @@ body.active{
     background-color: #fff  ;
 }
 
-#boasVindas{
+.boasVindas{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-#boasVindas h1{
+.boasVindas h1{
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 400;
     color: #fff;
 }  
 
-#boasVindas h3{
+.boasVindas h3{
     font-size: 20px;
     font-weight: 400;
     color: #fff;
@@ -175,59 +205,18 @@ body.active{
     color: var(--cor3);
 }
 
-.txtSlide{
-    position: absolute;
-    color: #fff;
-}
-  
 #radio2:checked ~ .navigation-auto .auto-btn2{
     background-color: #fff  ;
 }
-
-.txtSlide.one{
-    font-size: 78px;
-    line-height: 65px;
-    font-weight: bold;
-    top: 190px;
-    left: 660px;
-}  
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
     background-color: #fff  ;
 }
 
-#titleSlide{
-    position: absolute;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 95px;
-    top: 150px;
-    left: 845px;
-    line-height: 95px;
-    color: #fff;
-}
-
-.txtSlide.two{
-    font-size: 45px;
-    line-height: 50px;
-    font-weight: bold;
-    top: 355px;
-    left: 845px;
-    color: #3ea5ff;
-}  
-
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #fff  ;
 }
 
-.txtSlide.three{
-    font-size: 55px;
-    line-height: 65px;
-    font-weight: bold;
-    top: 185px;
-    left: 225px;
-}  
-  
 /* Toggle Menu -------------------------------------------------------- */
 
 .toggleMenu{
@@ -244,6 +233,7 @@ body.active{
     align-items: center;
     justify-content: space-between;
     position: absolute;
+    z-index: 1;
     top: 50px;
 }
 
@@ -323,9 +313,10 @@ body.active{
 
 /* Ícones Redes Sociais --------------------------------------------- */
 
-.redesSociais{
+.redesSociais {
     position: absolute;
-    bottom: 40px;
+    bottom: 0;
+    margin-bottom: 5%;
 }
 
 .iconsRs{
@@ -973,27 +964,54 @@ body.active{
 
 #sctSeven{
     width: 100%;
-    padding: 80px 50px;
+    padding: 80px 0px;
+}
+
+.sctsTitle.clt{
+    margin-left: 38px;
 }
 
 #clientes{
     margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex;  
+    cursor: pointer;
 }
 
 .cltImg{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 100%;
+    border: 1px solid green;
+    animation: autoRun 20s linear infinite;
+    animation-delay: var(--delay);
 }
+
+.cltImg img{
+    width: 100%;
+}
+
+#clientes:hover .cltImg{
+    animation-play-state: paused;
+}
+
+
+@keyframes autoRun{
+    from{
+        left: 100%;
+    }
+
+    to{
+        left: -200px;
+    }
+}
+
+
 /* Faixa Informações Quatro ------------------------------------------------------------------ */
 
 .info.four{
     display: flex;
+    margin-top: 220px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1262,18 +1280,22 @@ input[type=number]::-webkit-inner-spin-button{
     #sctSix{
         padding: 110px 300px
     }
-
-    #sctSeven{
-        padding: 80px 20%;
-        justify-content: center;
-    }
 }
 
 /* ----------------------Media 1300PX */
 
 @media(1300px >= width){
-    #sctOne{
-        padding: 50px 100px;
+
+    .imgSlide.one, .imgSlide.two, .imgSlide.three{
+        background-position: center;
+    }
+
+    #navBar{
+        padding: 0 110px;
+    }
+
+    .boasVindas h1{
+        font-size: 45px
     }
 
     #sctThree{
@@ -1341,8 +1363,8 @@ input[type=number]::-webkit-inner-spin-button{
 
 /* Media 1200PX ------------------------------------------ */
 @media(1200px >= width){
-    #sctOne{
-        padding: 50px 30px;
+    #navBar{
+        padding: 0 70px;
     }
 
     #sctTwo{
@@ -1390,11 +1412,6 @@ input[type=number]::-webkit-inner-spin-button{
 
 /* Media 1000PX ------------------------------------------ */
 @media(1000px >= width){
-
-    #sctOne{
-        background-position: center;
-    }
-
     .toggleMenu{
         width: 30px;
         height: 30px;
@@ -1413,6 +1430,11 @@ input[type=number]::-webkit-inner-spin-button{
         background: url(assets/menuX.svg) no-repeat;
         cursor: pointer;
         background-size: cover;
+    }
+
+    #navBar{
+        position: initial;
+        padding: 0 20px;
     }
 
     #navBarLinks{
@@ -1474,14 +1496,37 @@ input[type=number]::-webkit-inner-spin-button{
         display: none;
     }
 
-    #boasVindas h1{
+    .slider.finalizarSlider{
+        display: none;
+    }
+    
+    #sctOne{
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 30px;
+        background: url(assets/bannerAx.jpg);
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .boasVindas{
+        position: initial;
+        transform: translate(0);
+    }
+
+    .boasVindas h1{
         font-size: 45px;
     }  
     
-    #boasVindas h3{
+    .boasVindas h3{
         font-size: 15px;
     }
     
+    .redesSociais{
+        position: initial;
+        margin-bottom: 0;
+    }
+
     #btnBv{
         font-size: 14px;
         padding: 10px 20px;
@@ -1639,12 +1684,12 @@ input[type=number]::-webkit-inner-spin-button{
         height: 80%;
     }
     
-    #boasVindas h1{
+    .boasVindas h1{
         font-size: 35px;
         text-align: center;
     }  
     
-    #boasVindas h3{
+    .boasVindas h3{
         font-size: 12.5px;
         text-align: center;
         margin-top: 20px;
@@ -1690,14 +1735,6 @@ input[type=number]::-webkit-inner-spin-button{
 
     #pdtDescricao{
         font-size: 13px;
-    }
-
-    #clientes{
-        justify-content: space-evenly;
-    }
-
-    #sctSeven{
-        padding: 80px 20% 40px 20%;
     }
 
     .infoRsTitle{
@@ -1789,18 +1826,6 @@ input[type=number]::-webkit-inner-spin-button{
 
     #sctSix{
         padding: 110px 38px 50px 38px;
-    }
-
-    #clientes{
-        justify-content: center;
-    }
-
-    .cltImg.view.two{
-        display: none;
-    }
-
-    #sctSeven{
-        padding: 80px 35px  45px 35px;
     }
 
     

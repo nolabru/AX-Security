@@ -14,6 +14,23 @@
         <a href="https://api.whatsapp.com/send?phone=5511933358899" target="_blank" id="btnWhatsapp" class="btnFixed"></a>
         <section id="sctOne">
             <div onclick="menuT()" class="toggleMenu"></div>
+            <header id="navBar">
+                <a id="axLogo" href=""><img src="assets/img/geral/Axlogo.png" alt="LogoAx" title="Logo Ax Security"></a>
+                <ul id="navBarLinks">
+                    <li class="navLink"><a onclick="teste()" href="#sctOne">Home</a></li>
+                    <li class="navLink"><a href="#infoOne">Visão</a></li>
+                    <li class="navLink"><a href="#sctFour">Serviços</a></li>
+                    <li class="navLink"><a href="#sctFive">Empresa</a></li>
+                    <li class="navLink"><a href="#sctSix">Produtos</a></li>
+                    <li class="navLink"><a href="#infoContato">Contato</a></li>
+                    <li id="navBtn"><a href="https://api.whatsapp.com/send?phone=5511933358899" target="_blank">Solicite um Orçamento</a></li>
+                </ul>
+            </header>
+            <section class="boasVindas one">
+                <h1>Bem Vindo a AX Security</h1>
+                <h3>Uma Empresa Especializada em Sistemas de Monitoramento.</h3>
+                <a id="btnBv" href="https://api.whatsapp.com/send?phone=5511933358899" target="_blank">Solicite um Orçamento</a>
+            </section>
             <section class="slider">
                 <section class="slides">
                     <input type="radio" name="radio-btn" id="radio1">
@@ -21,25 +38,21 @@
                     <input type="radio" name="radio-btn" id="radio3">
                     <input type="radio" name="radio-btn" id="radio4">
                     <div class="slide first">
-                        <section id="boasVindas">
+                        <section class="boasVindas">
                             <h1>Bem Vindo a AX Security</h1>
                             <h3>Uma Empresa Especializada em Sistemas de Monitoramento.</h3>
                             <a id="btnBv" href="https://api.whatsapp.com/send?phone=5511933358899" target="_blank">Solicite um Orçamento</a>
                         </section>
-                        <img src="assets/css/assets/bannerAx.jpg" alt="">
+                        <div class="imgSlide one"></div>
                       </div>
                       <div class="slide">
-                        <p class="txtSlide one">Você e a sua <br> família merecem <br> mais segurança.</p>
-                        <img src="assets/css/assets/axBanner1.jpg" alt="">
+                        <div class="imgSlide two"></div>
                       </div>
                       <div class="slide">
-                        <h1 id="titleSlide">cercas <br> elétricas</h1>
-                        <p class="txtSlide two">+ segurança para <br> você e sua família.</p>
-                        <img src="assets/css/assets/axBanner2.jpg" alt="">
+                        <div class="imgSlide three"></div>
                       </div>
                       <div class="slide">
-                        <p class="txtSlide three">Temos a solução <br> perfeita para <br> sua empresa <br> e residência.</p>
-                        <img src="assets/css/assets/axBanner3.jpg" alt="">
+                        <div class="imgSlide four"></div>
                       </div>
                       <div class="navigation-auto">
                         <div class="auto-btn1"></div>
@@ -55,18 +68,6 @@
                       </div>
                 </section>
             </section>
-            <header id="navBar">
-                <a id="axLogo" href=""><img src="assets/img/geral/Axlogo.png" alt="LogoAx" title="Logo Ax Security"></a>
-                <ul id="navBarLinks">
-                    <li class="navLink"><a onclick="teste()" href="#sctOne">Home</a></li>
-                    <li class="navLink"><a href="#infoOne">Visão</a></li>
-                    <li class="navLink"><a href="#sctFour">Serviços</a></li>
-                    <li class="navLink"><a href="#sctFive">Empresa</a></li>
-                    <li class="navLink"><a href="#sctSix">Produtos</a></li>
-                    <li class="navLink"><a href="#infoContato">Contato</a></li>
-                    <li id="navBtn"><a href="https://api.whatsapp.com/send?phone=5511933358899" target="_blank">Solicite um Orçamento</a></li>
-                </ul>
-            </header>
             <section class="redesSociais">
                 <a href="https://www.facebook.com/Axsecutiry" target="_blank">
                     <svg class="iconsRs f" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
@@ -655,21 +656,21 @@
         <section class="info three">
             <a href="https://api.whatsapp.com/send?phone=5511933358899" target="_blank">Solicite um Orçamento</a>
         </section> 
-        <section id="sctSeven">
-            <h3 class="sctsTitle">Nossos Clientes</h3>
+        <!-- <section id="sctSeven">
+            <h3 class="sctsTitle clt">Nossos Clientes</h3>
                 <section id="clientes">
-                    <article class="cltImg view one "><img src="assets/img/clientes/irka.png" alt=""></article>
-                    <article class="cltImg view two"><img src="assets/img/clientes/tijuco.png" alt=""></article>
-                    <article class="cltImg view three"><img src="assets/img/clientes/kim.png" alt=""></article>
-                    <article class="cltImg view four"><img src="assets/img/clientes/sodie.png" alt=""></article>
-                    <article class="cltImg view five"><img src="assets/img/clientes/supermix.png" alt=""></article>
-                    <article class="cltImg noView"><img src="assets/img/clientes/tunoda.png" alt=""></article>
-                    <article class="cltImg noView"><img src="assets/img/clientes/tintas.png" alt=""></article>
-                    <article class="cltImg noView"><img src="assets/img/clientes/acos.png" alt=""></article>
-                    <article class="cltImg noView"><img src="assets/img/clientes/concre.png" alt=""></article>
-                    <article class="cltImg noView"><img src="assets/img/clientes/cajamar.png" alt=""></article>
+                    <article class="cltImg" style="--delay: 2s"><img src="assets/img/clientes/irka.png" alt=""></article>
+                    <article class="cltImg" style="--delay: 4s"><img src="assets/img/clientes/tijuco.png" alt=""></article>
+                    <article class="cltImg" style="--delay: 6s"><img src="assets/img/clientes/kim.png" alt=""></article>
+                    <article class="cltImg" style="--delay: 8s"><img src="assets/img/clientes/sodie.png" alt=""></article>
+                    <article class="cltImg" style="--delay: 10s"><img src="assets/img/clientes/supermix.png" alt=""></article>
+                    <article class="cltImg" style="--delay: 12s"><img src="assets/img/clientes/tunoda.png" alt=""></article>
+                    <article class="cltImg" style="--delay: 14s"><img src="assets/img/clientes/tintas.png" alt=""></article>
+                    <article class="cltImg" style="--delay: 16s"><img src="assets/img/clientes/acos.png" alt=""></article>
+                    <article class="cltImg" style="--delay: 18s"><img src="assets/img/clientes/concre.png" alt=""></article>
+                    <article class="cltImg" style="--delay: 20s"><img src="assets/img/clientes/cajamar.png" alt=""></article>
                 </section>
-        </section>
+        </section> -->
         <section class="info four">
             <h1 class="infoRsTitle">Siga-nos!</h1>
             <p class="infoRsDescricao">Fique por dentro do acontece na empresa.</p>

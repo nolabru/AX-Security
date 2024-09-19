@@ -358,18 +358,11 @@ function stm8000(){
     }
 }
 
-window.revelar = ScrollReveal({reset:true,
+window.revelar = ScrollReveal({reset:false,
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 
 // ----------------------------------------------------
-
-revelar.reveal("#boasVindas", {
-    duration: 1000,
-    delay: 500,
-    distance: "50px",
-    origin: "top"
-});
 
 revelar.reveal(".navigation-auto", {
     duration: 1000,
@@ -580,7 +573,7 @@ revelar.reveal('#clientes', {
     duration: 1000,
     delay: 150,
     distance: "70px",
-    origin: "top"
+    origin: "right"
 });
 
 // ----------------------------------------------------
@@ -594,16 +587,25 @@ revelar.reveal(".info.four",{
 
 // ----------------------------------------------------
 
+revelar.reveal("#infoContato > section",{
+    duration: 1000,
+    delay: 1000,
+    distance: "70px",
+    origin: "top"
+});
+
+// ----------------------------------------------------
+
 revelar.reveal('#footerTxt',{
     duration: 1000,
-    delay: 100,
+    delay: 200,
     distance: "70px",
     origin: "left"
 });
 
 revelar.reveal('#footerAx > img',{
     duration: 1000,
-    delay: 100,
+    delay: 200,
     distance: "70px",
     origin: "top"
 });

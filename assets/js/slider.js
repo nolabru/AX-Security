@@ -1,32 +1,23 @@
 let count = 1;
 document.getElementById('radio1').checked = true;
+const slider = document.querySelector('.slider'); 
 
-setInterval(function(){
-  nextImage();
-}, 6000);
-
-function nextImage(){
-  count++;
-  if(count > 4){
-    count = 1;
+let intervalId = setInterval(function() {
+  if (window.innerWidth >= 1000) {
+    nextImage();
+  } else {
+    clearInterval(intervalId);
   }
- 
-  document.getElementById('radio' + count).checked = true;
+}, 3000);
 
+if (window.innerWidth >= 1000) {
+  slider.classList.add('finalizarSlider');
 }
 
-// txtSlide one
-// txtSlide two
-// txtSlide three
-
-
-// window.revelar = ScrollReveal({reset:true,
-//     easing: 'cubic-bezier(0.5, 0, 0, 1)'
-// });
-
-// revelar.reveal("#boasVindas", {
-//     duration: 1000,
-//     delay: 500,
-//     distance: "50px",
-//     origin: "top"
-// });
+function nextImage() {
+  count++;
+  if (count > 4) {
+    count = 1;
+  }
+  document.getElementById('radio' + count).checked = true;
+}
