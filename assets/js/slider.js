@@ -8,7 +8,7 @@ let intervalId = setInterval(function () {
   } else {
     clearInterval(intervalId);
   }
-}, 3000);
+}, 6000);
 
 function nextImage() {
   count++;
