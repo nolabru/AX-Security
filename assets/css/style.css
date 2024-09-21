@@ -1533,6 +1533,7 @@ input[type=number]::-webkit-inner-spin-button{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
         
     .navigation-auto, .manual-navigation{
@@ -1807,6 +1808,7 @@ input[type=number]::-webkit-inner-spin-button{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 
     .conector.n{
