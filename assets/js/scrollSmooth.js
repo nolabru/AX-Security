@@ -29,6 +29,13 @@ revelar.reveal("#infoOne h1", {
     origin: "left"
 });
 
+revelar.reveal("#infoOne span", {
+    duration: 2000,
+    delay: 200,
+    distance: "70px",
+    origin: "left"
+});
+
 // ----------------------------------------------------
 
 revelar.reveal(".cardVisao", {

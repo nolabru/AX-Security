@@ -77,7 +77,7 @@ body.active{
 }
 
 .imgSlide.one{
-    background: url(assets/bannerAx.jpg);
+    background: url(assets/bannerAx.png);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -338,7 +338,9 @@ body.active{
 #infoOne{
     width: 100%;
     height: 220px;
-    background: #23262d ;
+    background: linear-gradient(155deg, #23262d2d, #23262d9f),url(assets/infoTwoBg.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -348,9 +350,14 @@ body.active{
 
 #infoOne h1{
     color: #fff;
-    font-size: 50px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
     text-transform: uppercase;
+}
+
+
+#infoOne span{
+    font-size: 50px;
 }
 
 /* Seção Dois ------------------------------------------------------------------ */
@@ -1285,9 +1292,9 @@ input[type=number]::-webkit-inner-spin-button{
 /* ----------------------Media 1300PX */
 
 @media(1300px >= width){
-
     .imgSlide.one, .imgSlide.two, .imgSlide.three{
         background-position: center;
+        background-size: cover;
     }
 
     #navBar{
@@ -1412,6 +1419,10 @@ input[type=number]::-webkit-inner-spin-button{
 
 /* Media 1000PX ------------------------------------------ */
 @media(1000px >= width){
+    #axLogo img{
+        margin-left: 25px;
+    }
+
     .toggleMenu{
         width: 30px;
         height: 30px;
@@ -1433,7 +1444,6 @@ input[type=number]::-webkit-inner-spin-button{
     }
 
     #navBar{
-        position: initial;
         padding: 0 20px;
     }
 
@@ -1442,10 +1452,10 @@ input[type=number]::-webkit-inner-spin-button{
         transform: scale(0);
         transition: all .4s;
         opacity: 0;
-        top: 105px;
+        top: 50px;
         right: 65px;
         width: 30%;
-        height: 50%;
+        height: 400px;
         border-radius: 5px;
         background: #f6f6f6;
         flex-direction: column;
@@ -1496,22 +1506,44 @@ input[type=number]::-webkit-inner-spin-button{
         display: none;
     }
 
-    .slider{
-        display: none;
-    }
-    
     #sctOne{
         align-items: center;
         justify-content: space-between;
-        padding: 50px 30px;
-        background: url(assets/bannerAx.jpg);
         background-position: center;
         background-attachment: fixed;
     }
 
+    .imgSlide.one{
+        background: url(assets/axBannerTb.png);
+    }
+    
+    .imgSlide.two{
+        background: url(assets/axBanner1Tb.jpg);
+    }
+
+    .imgSlide.three{
+        background: url(assets/axBanner2Tb.jpg);
+    }
+
+    .imgSlide.four{
+        background: url(assets/axBanner3Tb.jpg);
+    }
+
+    .imgSlide.one, .imgSlide.two, .imgSlide.three, .imgSlide.four {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+        
+    .navigation-auto, .manual-navigation{
+        display: none;
+    }
+
     .boasVindas{
-        position: initial;
-        transform: translate(0);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .boasVindas h1{
@@ -1523,17 +1555,12 @@ input[type=number]::-webkit-inner-spin-button{
     }
     
     .redesSociais{
-        position: initial;
-        margin-bottom: 0;
+        margin-bottom: 50px;
     }
 
     #btnBv{
         font-size: 14px;
         padding: 10px 20px;
-    }
-
-    #infoOne h1{
-        font-size: 35px;
     }
 
     .cardVisao{
@@ -1629,6 +1656,14 @@ input[type=number]::-webkit-inner-spin-button{
 /* Media 800PX ------------------------------------------- */
 @media(800px >= width){
 
+    #infoOne h1{
+        font-size: 15px;
+    }
+
+    #infoOne span{
+        font-size: 35px;
+    }
+
     #sctTwo{
         flex-wrap: wrap;
         height: max-content;
@@ -1676,10 +1711,6 @@ input[type=number]::-webkit-inner-spin-button{
         top: 53px;
     }
 
-    #navBarLinks{
-        top: 105px;
-    }
-
     #axLogo img{
         height: 80%;
     }
@@ -1702,10 +1733,6 @@ input[type=number]::-webkit-inner-spin-button{
 
     #infoOne{
         height: 150px;
-    }
-
-    #infoOne h1{
-        font-size: 25px;
     }
 
     .descricaoCard{
@@ -1759,6 +1786,29 @@ input[type=number]::-webkit-inner-spin-button{
     .boasVindas h1{
         width: 100%;
     }
+
+    .imgSlide.one{
+        background: url(assets/axBannerPhone.png);
+    }
+    
+    .imgSlide.two{
+        background: url(assets/axBanner1Phone.jpg);
+    }
+
+    .imgSlide.three{
+        background: url(assets/axBanner2Phone.jpg);
+    }
+
+    .imgSlide.four{
+        background: url(assets/axBanner3Phone.jpg);
+    }
+
+    .imgSlide.one, .imgSlide.two, .imgSlide.three, .imgSlide.four {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .conector.n{
         display: block;
     }
@@ -1910,7 +1960,7 @@ input[type=number]::-webkit-inner-spin-button{
         justify-content: center;
         width: 50%;
         height: 35%;
-        margin-bottom: 300px;
+        margin-bottom: 350px;
         border-radius: 5px;
         transition: all .4s;
     }
@@ -1977,6 +2027,15 @@ input[type=number]::-webkit-inner-spin-button{
 
 /* Media 400PX ------------------------------------------- */
 @media(400px >= width){
+    
+    #infoOne h1{
+        font-size: 13px;
+    }
+
+    #infoOne span{
+        font-size: 28px;
+    }
+
     .svcTitle{
         font-size: 19px;
     }
