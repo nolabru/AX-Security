@@ -219,15 +219,6 @@ revelar.reveal('.pdtCard ', {
 
 // ----------------------------------------------------
 
-revelar.reveal('#clientes', {
-    duration: 1000,
-    delay: 150,
-    distance: "70px",
-    origin: "right"
-});
-
-// ----------------------------------------------------
-
 revelar.reveal(".info.four", {
     duration: 1000,
     delay: 400,

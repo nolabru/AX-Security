@@ -1,22 +1,22 @@
 @import url(global.css);
 
-body.active{
+body.active {
     overflow-y: hidden;
 }
 
-/* Elementos Fixos ------------------------------------------------------------------ */
+/* Elementos Fixos --------------------------------------------------------- */
 
-.btnFixed{
+.btnFixed {
     position: fixed;
     z-index: 1;
     transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.btnFixed:hover{
+.btnFixed:hover {
     transform: translateY(-5px);
 }
 
-#btnUp{
+#btnUp {
     width: 28px;
     height: 28px;
     background: url(assets/btnSub.png);
@@ -24,7 +24,7 @@ body.active{
     left: 30px;
 }
 
-#btnWhatsapp{
+#btnWhatsapp {
     width: 42px;
     height: 42px;
     background: url(assets/btnWpp.png);
@@ -32,75 +32,76 @@ body.active{
     right: 30px;
 }
 
-/* Seção 1 ------------------------------------------------------------------ */
+/* Seção 1 - Apresentação -------------------------------------------------- */
 
-#sctOne{
-    width: 100%; 
+#sctOne {
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
     background: #23262d;
     position: relative;
 }
-/* Slider -------------------------------------------------------- */
 
-.slider{
+/* Slider Seção 1 ----------------------------------- */
+
+.slider {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.slides{
+.slides {
     width: 400%;
     height: 100%;
     display: flex;
 }
 
-.slides input{
+.slides input {
     display: none;
 }
 
-.slide{
+.slide {
     width: 25%;
     position: relative;
     transition: 2s;
 }
 
-.slide img{
+.slide img {
     width: 100%;
 }
 
-.imgSlide{
+.imgSlide {
     width: 100%;
     height: 100%;
 }
 
-.imgSlide.one{
+.imgSlide.one {
     background: url(assets/bannerAx.png);
     background-size: cover;
     background-attachment: fixed;
 }
 
-.imgSlide.two{
+.imgSlide.two {
     background: url(assets/axBanner1.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
-.imgSlide.three{
+.imgSlide.three {
     background: url(assets/axBanner2.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
-.imgSlide.four{
+.imgSlide.four {
     background: url(assets/axBanner3.jpg);
     background-size: cover;
-    background-attachment: fixed;   
+    background-attachment: fixed;
 }
-  
-.manual-navigation{
+
+.manual-navigation {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -108,46 +109,47 @@ body.active{
     display: flex;
     justify-content: center;
 }
-.manual-btn{
+
+.manual-btn {
     padding: 3.5px 20px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
     margin-right: 40px;
 }
-  
-.manual-btn:hover{
+
+.manual-btn:hover {
     background: #fff;
 }
-  
-#radio:checked ~ .first{
+
+#radio:checked~.first {
     margin-left: 0;
 }
-  
-#radio2:checked ~ .first{
+
+#radio2:checked~.first {
     margin-left: -25%;
 }
-  
-#radio3:checked ~ .first{
+
+#radio3:checked~.first {
     margin-left: -50%;
 }
 
-#radio4:checked ~ .first{
+#radio4:checked~.first {
     margin-left: -75%;
 }
-  
-.navigation-auto div{
+
+.navigation-auto div {
     border: .5px solid #fff;
     padding: 3px 20px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
 }
-  
-.navigation-auto{
+
+.navigation-auto {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -155,16 +157,30 @@ body.active{
     display: flex;
     justify-content: center;
 }
-  
-.navigation-auto div:not(:last-child){
+
+.navigation-auto div:not(:last-child) {
     margin-right: 37.5px;
 }
-  
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #fff  ;
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: #fff;
 }
 
-.boasVindas{
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: #fff;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background-color: #fff;
+}
+
+/* Subseção - Boas Vindas --------------------------- */
+
+.boasVindas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,21 +191,21 @@ body.active{
     text-align: center;
 }
 
-.boasVindas h1{
+.boasVindas h1 {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 400;
     color: #fff;
     width: 120%;
-}  
+}
 
-.boasVindas h3{
+.boasVindas h3 {
     font-size: 20px;
     font-weight: 400;
     color: #fff;
 }
 
-#btnBv{
+#btnBv {
     border: 1px solid;
     border-image: linear-gradient(90deg, var(--cor2), var(--cor1));
     border-image-slice: 1;
@@ -199,36 +215,22 @@ body.active{
     transition: all .4s ease-in-out;
 }
 
-#btnBv:hover{
+#btnBv:hover {
     transform: translateY(5px);
     border: 1px solid #fff;
     background: #fff;
     color: var(--cor3);
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff  ;
-}
+/* Barra de Navegação ------------------------------- */
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff  ;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #fff  ;
-}
-
-/* Toggle Menu -------------------------------------------------------- */
-
-.toggleMenu{
+.toggleMenu {
     display: none;
 }
 
-/* Barra de Navegação --------------------------------------------- */
-
-#navBar{
+#navBar {
     width: 100%;
-    height: 55px;  
+    height: 55px;
     padding: 0 185px;
     display: flex;
     align-items: center;
@@ -238,24 +240,24 @@ body.active{
     top: 50px;
 }
 
-#axLogo{
+#axLogo {
     height: 100%;
 }
 
-#axLogo img{
+#axLogo img {
     height: 100%;
 }
 
-#navBarLinks{
+#navBarLinks {
     display: flex;
     align-items: center;
 }
 
-.navLink{
+.navLink {
     padding: 0 45px 0 0;
 }
 
-.navLink a{
+.navLink a {
     font-size: 14px;
     font-weight: 300;
     color: var(--cor5);
@@ -263,11 +265,11 @@ body.active{
     transition: all .5s ease-in-out;
 }
 
-.navLink a:hover{
+.navLink a:hover {
     color: #fff;
 }
 
-.navLink a::after{
+.navLink a::after {
     content: '';
     width: 100%;
     height: 1px;
@@ -280,12 +282,12 @@ body.active{
     transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-.navLink a:hover::after{
+.navLink a:hover::after {
     transform: scaleX(1);
-    transform-origin: left; 
+    transform-origin: left;
 }
 
-#navBtn{
+#navBtn {
     width: 170px;
     height: 32px;
     padding: 0;
@@ -298,21 +300,21 @@ body.active{
     transition: all .5s ease-in-out;
 }
 
-#navBtn:hover{
+#navBtn:hover {
     background: #fff;
 }
 
-#navBtn a{
+#navBtn a {
     font-size: 12px;
     color: #fff;
     transition: all .5s ease-in-out;
 }
 
-#navBtn:hover a{
+#navBtn:hover a {
     color: var(--cor3);
 }
 
-/* Ícones Redes Sociais --------------------------------------------- */
+/* Redes Sociais Topo ------------------------------- */
 
 .redesSociais {
     position: absolute;
@@ -320,25 +322,35 @@ body.active{
     margin-bottom: 5%;
 }
 
-.iconsRs{
+.iconsRs {
     margin: 0 10px;
-    width:22px;
+    width: 22px;
     fill: var(--cor5);
     transition: all .3s ease-in;
 }
 
-.iconsRs:hover{transform: translateY(-5px);}
+.iconsRs:hover {
+    transform: translateY(-5px);
+}
 
-.iconsRs.f:hover{fill: #2973BA;}
-.iconsRs.i:hover{fill: #E03173;}
-.iconsRs.w:hover{fill: #5AF472;}
+.iconsRs.f:hover {
+    fill: #2973BA;
+}
 
-/* Faixa Informações ------------------------------------------------------------------ */
+.iconsRs.i:hover {
+    fill: #E03173;
+}
 
-#infoOne{
+.iconsRs.w:hover {
+    fill: #5AF472;
+}
+
+/* Faixa Informações Um ----------------------------------------------------- */
+
+#infoOne {
     width: 100%;
     height: 220px;
-    background: linear-gradient(155deg, #23262d2d, #23262d9f),url(assets/infoTwoBg.png);
+    background: linear-gradient(155deg, #23262d2d, #23262d9f), url(assets/infoTwoBg.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -348,21 +360,20 @@ body.active{
     padding: 0px 30px;
 }
 
-#infoOne h1{
+#infoOne h1 {
     color: #fff;
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-
-#infoOne span{
+#infoOne span {
     font-size: 50px;
 }
 
-/* Seção Dois ------------------------------------------------------------------ */
+/* Seção Dois - Visão ------------------------------------------------------ */
 
-#sctTwo{
+#sctTwo {
     width: 100%;
     display: flex;
     align-items: center;
@@ -371,16 +382,18 @@ body.active{
     padding: 150px 100px;
 }
 
-#particles-js{
+/* Animação Fundo ----------------------------------- */
+
+#particles-js {
     position: absolute;
     width: 100%;
     height: 100%;
     background: linear-gradient(150deg, #175d99, #051421);
 }
 
-/* Cards Visão --------------------------------------------- */
+/* Cards Visão -------------------------------------- */
 
-.cardVisao{
+.cardVisao {
     width: 310px;
     height: 100%;
     display: flex;
@@ -390,15 +403,15 @@ body.active{
     z-index: 1;
 }
 
-.cardVisao > img{
+.cardVisao>img {
     width: 90px;
 }
 
-.cardVisao.est{
+.cardVisao.est {
     padding-bottom: 80px;
 }
 
-.tituloCard{
+.tituloCard {
     color: #fff;
     text-transform: uppercase;
     font-weight: 400;
@@ -406,16 +419,16 @@ body.active{
     padding: 35px 0 30px 0;
 }
 
-.descricaoCard{
+.descricaoCard {
     text-align: center;
     font-size: 15px;
     color: #d5d5d5;
     font-weight: 300;
 }
 
-/* Seção Três ------------------------------------------------------------------ */
+/* Seção Três - Vantagens -------------------------------------------------- */
 
-#sctThree{
+#sctThree {
     width: 100%;
     height: 725px;
     display: flex;
@@ -424,11 +437,13 @@ body.active{
     justify-content: center;
 }
 
-#sctThree > section{
+#sctThree>section {
     display: flex;
 }
 
-.cardVtg{
+/* Card Vantagens ----------------------------------- */
+
+.cardVtg {
     width: 290px;
     height: 370px;
     margin: 0 15px;
@@ -439,57 +454,60 @@ body.active{
     position: relative;
 }
 
-.cardImg{
+.cardImg {
     width: 63px;
     height: 68px;
 }
 
-.cardImg.se{
+.cardImg.se {
     width: 63px;
     padding: 4.5px 0;
 }
-.cardImg.eq{
+
+.cardImg.eq {
     width: 46px;
     padding: 4.5px 0;
 }
-.cardImg.es{
+
+.cardImg.es {
     width: 55px;
     height: 68px;
 }
-.cardImg.ri{
+
+.cardImg.ri {
     width: 60px;
     padding: 4.5px 0;
 }
 
-.tituloVtg{
+.tituloVtg {
     font-size: 24px;
     color: var(--cor1);
     font-weight: 500;
     padding: 35px 0 40px 0;
 }
 
-.descricaoVtg{
+.descricaoVtg {
     font-size: 18px;
     color: #000;
     font-weight: 400;
 }
 
-.conector{
+.conector {
     position: absolute;
     right: -45px;
     bottom: 42%;
     z-index: 1;
 }
 
-/* Seção Quatro ------------------------------------------------------------------ */
+/* Seção Quatro - Serviços ------------------------------------------------- */
 
-#sctFour{
+#sctFour {
     width: 100%;
     padding: 40px 38px 130px 38px;
     background: #f8f8f8;
 }
 
-.sctsTitle{
+.sctsTitle {
     display: inline-block;
     position: relative;
     color: var(--cor3);
@@ -497,7 +515,7 @@ body.active{
     font-weight: 500;
 }
 
-.sctsTitle::after{
+.sctsTitle::after {
     content: '';
     width: 35%;
     height: 2px;
@@ -508,21 +526,22 @@ body.active{
     border-radius: 10px;
 }
 
-#servicos{
+#servicos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 50px;
 }
 
-/* Detalhes Serviços ------------------------------------- */
+/* Cards Serviços ----------------------------------- */
 
-.svcDetalhes, .pdtDetalhes{
+.svcDetalhes,
+.pdtDetalhes {
     width: 100%;
     height: 100%;
     top: 0;
     background: #00000099;
-    position: fixed;    
+    position: fixed;
     opacity: 0;
     z-index: 3;
     transform: scale(0);
@@ -532,12 +551,15 @@ body.active{
     transition: opacity .8s ease-in-out;
 }
 
-.svcDetalhes.active, .pdtDetalhes.active{
+.svcDetalhes.active,
+.pdtDetalhes.active {
     transform: scale(1);
-    opacity: 1; 
+    opacity: 1;
 }
 
-.svcCardDetalhes, #tpEvt, .pdtCardDetalhes{
+.svcCardDetalhes,
+#tpEvt,
+.pdtCardDetalhes {
     position: absolute;
     width: 50%;
     padding: 20px;
@@ -549,7 +571,7 @@ body.active{
     border-radius: 5px;
 }
 
-.toggleDetalhes{
+.toggleDetalhes {
     width: 30px;
     height: 30px;
     background: url(assets/menuX.svg);
@@ -562,19 +584,19 @@ body.active{
     transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.svcCardDetalhes span{
+.svcCardDetalhes span {
     color: var(--cor3);
     font-weight: bold;
 }
 
-.svcCardDetalhes > h3{
+.svcCardDetalhes>h3 {
     text-transform: uppercase;
     background: linear-gradient(90deg, var(--cor1), var(--cor2));
     background-clip: text;
-    -webkit-text-fill-color: transparent;    
+    -webkit-text-fill-color: transparent;
 }
 
-.svcCardDetalhes > p{
+.svcCardDetalhes>p {
     font-size: 14px;
     color: #787D85;
     margin-top: 10px;
@@ -582,19 +604,21 @@ body.active{
     font-weight: 300;
 }
 
-.svcCardDetalhes > h5{
+.svcCardDetalhes>h5 {
     font-size: 14px;
     color: #787D85;
     font-weight: bold;
     margin: 10px 0;
 }
 
-.svcCardDetalhes li, #tpEvt li{
+.svcCardDetalhes li,
+#tpEvt li {
     color: #787D85;
     margin: 6px 0 0 25px;
 }
 
-.svcCardDetalhes li::before, #tpEvt li::before{
+.svcCardDetalhes li::before,
+#tpEvt li::before {
     content: '';
     width: 18px;
     height: 18px;
@@ -605,11 +629,11 @@ body.active{
     position: absolute;
 }
 
-#tpEvt li::before{
+#tpEvt li::before {
     margin-top: 0;
 }
 
-#tpEvtBtn{
+#tpEvtBtn {
     display: inline-block;
     margin-top: 15px;
     padding: 2px 15px;
@@ -618,21 +642,21 @@ body.active{
     transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#tpEvtBtn:hover{
+#tpEvtBtn:hover {
     transform: translateX(10px);
     background: var(--cor1);
     color: #fff;
 }
 
-.svcCardDetalhes.evt{
+.svcCardDetalhes.evt {
     transform: scale(1);
 }
 
-.svcCardDetalhes.evt.off{
+.svcCardDetalhes.evt.off {
     transform: scale(0);
 }
 
-#tpEvt{
+#tpEvt {
     position: absolute;
     transform: scale(0);
     opacity: 0;
@@ -640,12 +664,12 @@ body.active{
     transition: opacity .8s ease-in-out;
 }
 
-#tpEvt.active{
+#tpEvt.active {
     transform: scale(1);
     opacity: 1;
 }
 
-#tpEvt > h5{
+#tpEvt>h5 {
     font-size: 18px;
     text-transform: uppercase;
     background: linear-gradient(90deg, var(--cor1), var(--cor2));
@@ -653,7 +677,7 @@ body.active{
     -webkit-text-fill-color: transparent;
 }
 
-#toggleEvt{
+#toggleEvt {
     position: absolute;
     width: 25px;
     height: 25px;
@@ -666,33 +690,55 @@ body.active{
     transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.toggleDetalhes:hover, #toggleEvt:hover{
+.toggleDetalhes:hover,
+#toggleEvt:hover {
     transform: translateY(-3px);
 }
 
-/* ---------------------------------------------- */
-
-.svcBox{    
+.svcBox {
     width: 592px;
     height: 387px;
     display: flex;
 }
 
-.svcBox section{
+.svcBox section {
     width: 50%;
     height: 100%;
 }
 
-.svcImg.seg{background: url(assets/segImg.png);}
-.svcImg.ala{background: url(assets/alaImg.png);}
-.svcImg.cer{background: url(assets/cerImg.png);}
-.svcImg.ist{background: url(assets/istImg.png);}
-.svcImg.acs{background: url(assets/acsImg.png);}
-.svcImg.evt{background: url(assets/evtImg.png);}
-.svcImg.axc{background: url(assets/axcImg.png);}
-.svcImg.cam{background: url(assets/camImg.png);}
+.svcImg.seg {
+    background: url(assets/segImg.png);
+}
 
-.svcInfos{
+.svcImg.ala {
+    background: url(assets/alaImg.png);
+}
+
+.svcImg.cer {
+    background: url(assets/cerImg.png);
+}
+
+.svcImg.ist {
+    background: url(assets/istImg.png);
+}
+
+.svcImg.acs {
+    background: url(assets/acsImg.png);
+}
+
+.svcImg.evt {
+    background: url(assets/evtImg.png);
+}
+
+.svcImg.axc {
+    background: url(assets/axcImg.png);
+}
+
+.svcImg.cam {
+    background: url(assets/camImg.png);
+}
+
+.svcInfos {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -700,14 +746,14 @@ body.active{
     background: #fff;
 }
 
-.svcTitle{
+.svcTitle {
     position: relative;
     font-size: 28px;
     font-weight: 600;
     color: var(--cor3);
 }
 
-.svcTitle::after{
+.svcTitle::after {
     content: '';
     width: 25%;
     height: 2px;
@@ -717,13 +763,13 @@ body.active{
     bottom: -9px;
 }
 
-.svcDescricao{
+.svcDescricao {
     font-size: 18px;
     padding-right: 10px;
     color: var(--cor4);
 }
 
-.svcBtn{   
+.svcBtn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -741,13 +787,13 @@ body.active{
     cursor: pointer;
 }
 
-.svcBtn:hover{
+.svcBtn:hover {
     transform: translateY(-10px);
 }
 
-/* Faixa Informações Dois ------------------------------------------------------------------ */
+/* Faixa Informações Dois -------------------------------------------------- */
 
-.info{
+.info {
     width: 100%;
     height: 270px;
     display: flex;
@@ -755,17 +801,17 @@ body.active{
     justify-content: center;
 }
 
-.info.two{
+.info.two {
     background: #fff;
 }
 
-.info > a{
-    font-size: 30px;   
+.info>a {
+    font-size: 30px;
     padding: 20px 100px;
-    transition: all .5s ease-in-out;   
+    transition: all .5s ease-in-out;
 }
 
-.info.two > a{
+.info.two>a {
     border: 1px solid;
     border-image: linear-gradient(90deg, var(--cor2), var(--cor1));
     border-image-slice: 1;
@@ -774,14 +820,14 @@ body.active{
     -webkit-text-fill-color: transparent;
 }
 
-.info.two > a:hover{
+.info.two>a:hover {
     transform: translateY(-10px);
-    box-shadow: 0 2px 10px #d1d1d1;    
+    box-shadow: 0 2px 10px #d1d1d1;
 }
 
-/* Seção Cinco ------------------------------------------------------------------ */
+/* Seção Cinco - Empresa --------------------------------------------------- */
 
-#sctFive{
+#sctFive {
     width: 100%;
     height: 700px;
     display: flex;
@@ -789,28 +835,28 @@ body.active{
     background: #F8F8F8;
 }
 
-#sctFive > section{
+#sctFive>section {
     width: 50%;
 }
 
-#sctFive .sctsTitle::after{
+#sctFive .sctsTitle::after {
     width: 12%;
-}   
+}
 
-#empImg{
+#empImg {
     background: url(assets/axBanner.png);
     background-size: cover;
     background-position: center;
 }
 
-#empDescricao{
+#empDescricao {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 35px 70px 35px 60px;
 }
 
-.empTxt{
+.empTxt {
     font-size: 15px;
     font-weight: 300;
     padding: 10px 0;
@@ -818,38 +864,41 @@ body.active{
     text-align: justify;
 }
 
-.empTxt > span{
+.empTxt>span {
     color: var(--cor1);
     font-weight: 600;
 }
 
-#empRedesSociais > a > svg, #infoRs > a > svg{
+#empRedesSociais>a>svg,
+#infoRs>a>svg {
     fill: var(--cor1);
     margin: 0 20px 0 0;
 }
 
-/* Seção Seis ------------------------------------------------------------------ */
+/* Seção Seis - Produtos --------------------------------------------------- */
 
-#sctSix{
+#sctSix {
     width: 100%;
     padding: 110px 38px;
 }
 
-#pdtDescricao{
+#pdtDescricao {
     font-size: 16px;
     color: var(--cor4);
     margin-top: 5px;
     font-weight: 300;
 }
 
-#produtos{
+/* Cards Produtos ----------------------------------- */
+
+#produtos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 45px;
 }
 
-.pdtCard{
+.pdtCard {
     width: 290px;
     height: 370px;
     padding: 16px;
@@ -860,22 +909,22 @@ body.active{
     background: #F6F6F6;
 }
 
-.pdtCard > img{
+.pdtCard>img {
     cursor: pointer;
 }
 
-.pdtTitle{
-    font-size: 16px;   
-    font-weight: 700; 
+.pdtTitle {
+    font-size: 16px;
+    font-weight: 700;
     position: relative;
     color: var(--cor4);
 }
 
-.pdtTitle > span{
+.pdtTitle>span {
     font-weight: 400;
 }
 
-.pdtTitle::after{
+.pdtTitle::after {
     content: "";
     width: 15%;
     height: 2px;
@@ -886,27 +935,26 @@ body.active{
     border-radius: 5px;
 }
 
-.sda{
+.sda {
     width: 220px;
 }
 
-.trf{
+.trf {
     width: 230px;
 }
 
-/* Detalhes Produtos ------------------------------------- */
-.pdtCardDetalhes{
-    width: 40%;  
+.pdtCardDetalhes {
+    width: 40%;
 }
 
-.pdtCardDetalhes > h3{
+.pdtCardDetalhes>h3 {
     color: #787D85;
     font-weight: 500;
     font-size: 17px;
     position: relative;
 }
 
-.pdtCardDetalhes > h3::after{
+.pdtCardDetalhes>h3::after {
     content: '';
     position: absolute;
     width: 7%;
@@ -916,7 +964,7 @@ body.active{
     bottom: -6px;
 }
 
-.pdtCardDetalhes > p{
+.pdtCardDetalhes>p {
     color: #787D85;
     margin-top: 10px;
     text-align: justify;
@@ -924,11 +972,11 @@ body.active{
     font-weight: 300;
 }
 
-.pdtCardDetalhes ul{
+.pdtCardDetalhes ul {
     margin-top: 10px;
 }
 
-.pdtCardDetalhes li{
+.pdtCardDetalhes li {
     color: #787D85;
     font-weight: 300;
     position: relative;
@@ -936,7 +984,7 @@ body.active{
     padding-left: 30px;
 }
 
-.pdtCardDetalhes li::before{
+.pdtCardDetalhes li::before {
     content: '';
     position: absolute;
     width: 22px;
@@ -947,77 +995,78 @@ body.active{
     top: 2px;
 }
 
+/* Faixa Informações Três -------------------------------------------------- */
 
-/* Faixa Informações Três ------------------------------------------------------------------ */
-
-.info.three{
+.info.three {
     background: url(assets/infoThreeBg.png);
     background-position: center;
     background-attachment: fixed;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.info.three > a{
+.info.three>a {
     border: 1px solid #fff;
-    background: #ffffff18;  
+    background: #ffffff18;
     color: #fff;
 }
 
-.info.three > a:hover{
+.info.three>a:hover {
     transform: translateY(-10px);
 }
 
+/* Seção Sete - Clientes --------------------------------------------------- */
 
-/* Seção Sete ----------------------------------------------------------------------------------*/
-
-#sctSeven{
+#sctSeven {
     width: 100%;
     padding: 80px 0px;
 }
 
-.sctsTitle.clt{
+.sctsTitle.clt {
     margin-left: 38px;
 }
 
-.clientes{
+.clientes {
     overflow: hidden;
     padding: 30px 0;
     white-space: nowrap;
     cursor: pointer;
 }
 
-.clientes:hover .sliderClientes{
+.clientes:hover .sliderClientes {
     animation-play-state: paused;
 }
 
-.sliderClientes{
+.sliderClientes {
     display: inline-block;
     animation: 35s slide infinite linear;
     perspective: 100px;
 }
 
-.sliderClientes img{
+.sliderClientes img {
     height: 200px;
-    margin: 0 40px; 
+    margin: 0 40px;
     transition: .4s;
 }
 
-.sliderClientes img:hover{
+.sliderClientes img:hover {
     transform: translateY(-20px);
 }
 
-@keyframes slide{
-    from{
+/* Animação Clientes -------------------------------- */
+
+@keyframes slide {
+    from {
         transform: translateX(0);
     }
-    to{
+
+    to {
         transform: translateX(-100%);
     }
 }
 
-/* Faixa Informações Quatro ------------------------------------------------------------------ */
+/* Faixa Informações Quatro ------------------------------------------------ */
 
-.info.four{
+.info.four {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1025,29 +1074,29 @@ body.active{
     background: #F6F6F6;
 }
 
-.infoRsTitle{
+.infoRsTitle {
     font-size: 50px;
     font-weight: 400;
     color: var(--cor1);
     text-transform: uppercase;
 }
 
-.infoRsDescricao{
+.infoRsDescricao {
     font-size: 16px;
     color: var(--cor4);
     font-weight: 300;
     margin-bottom: 22px;
 }
 
-/* Seção Instagram ------------------------------------------------------------------ */
+/* Seção Oito - Instagram -------------------------------------------------- */
 
-#instagram{
+#instagram {
     width: 100%;
 }
 
-/* Seção Contato ------------------------------------------------------------------ */
+/* Seção Nove - Contato ---------------------------------------------------- */
 
-#infoContato{
+#infoContato {
     width: 100%;
     height: 200px;
     display: flex;
@@ -1055,24 +1104,24 @@ body.active{
     justify-content: center;
 }
 
-#infoContato > section{
+#infoContato>section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#contato{
+#contato {
     width: 100%;
     height: 615px;
     display: flex;
 }
 
-#contato > section{
+#contato>section {
     width: 50%;
 }
 
-#dadosCtt{
+#dadosCtt {
     background: url(assets/cttBg.png);
     background-size: cover;
     background-position: center;
@@ -1082,7 +1131,7 @@ body.active{
     justify-content: space-around;
 }
 
-.cttBfIcon{
+.cttBfIcon {
     font-size: 20px;
     color: #fff;
     margin-bottom: 10px;
@@ -1090,31 +1139,41 @@ body.active{
     position: relative;
 }
 
-.cttBfIcon::before{
+.cttBfIcon::before {
     content: '';
     width: 26px;
     height: 26px;
     position: absolute;
     top: 0;
-    left: -35px;;
+    left: -35px;
+    ;
 }
 
-.cttBfIcon.ed::before{background: url(assets/iconMapa.png);}
-.cttBfIcon.tl::before{background: url(assets/iconContato.png);}
-.cttBfIcon.em::before{background: url(assets/iconEmail.png);top: 3px;}
+.cttBfIcon.ed::before {
+    background: url(assets/iconMapa.png);
+}
 
-.fdCtt > p{
+.cttBfIcon.tl::before {
+    background: url(assets/iconContato.png);
+}
+
+.cttBfIcon.em::before {
+    background: url(assets/iconEmail.png);
+    top: 3px;
+}
+
+.fdCtt>p {
     font-size: 18px;
     color: #d8d8d8;
     font-weight: 300;
 }
 
-.fdCtt > p > a{
+.fdCtt>p>a {
     color: #d8d8d8;
     text-decoration: underline;
 }
 
-#formCttBox{
+#formCttBox {
     padding: 48px;
     display: flex;
     flex-direction: column;
@@ -1122,7 +1181,7 @@ body.active{
     justify-content: center;
 }
 
-#formCtt{
+#formCtt {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1131,12 +1190,13 @@ body.active{
     justify-content: space-evenly;
 }
 
-#formCtt > h4{
+#formCtt>h4 {
     font-size: 18px;
     color: var(--cor1);
 }
 
-#formCtt > input, #formCtt > textarea{
+#formCtt>input,
+#formCtt>textarea {
     width: 100%;
     border: 1px solid #d3d3d3;
     padding: 9px 12px;
@@ -1145,45 +1205,45 @@ body.active{
     outline: none;
 }
 
-#formCtt > input::placeholder{
+#formCtt>input::placeholder {
     color: var(--cor4);
 }
 
-#formCtt > button{
+#formCtt>button {
     border: 2px solid var(--cor1);
     background: transparent;
     font-size: 18px;
-    color:var(--cor1);
+    color: var(--cor1);
     padding: 5px 60px;
     font-weight: 400;
     transition: all .5s ease-in-out;
     cursor: pointer;
 }
 
-#formCtt > button:hover{
+#formCtt>button:hover {
     background: var(--cor1);
     color: #fff;
     font-weight: 400;
 }
 
-#formCtt > textarea{
+#formCtt>textarea {
     height: 200px;
 }
 
-input[type=number]::-webkit-inner-spin-button{
-    appearance: none; 
-}   
+input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
+}
 
-/* Mapa ------------------------------------------------------------------ */
+/* Seção Dez - Mapa -------------------------------------------------------- */
 
-#mapaAx{
+#mapaAx {
     width: 100%;
     height: 580px;
 }
 
-/* Nav Bar Footer -------------------------------------------------------- */
+/* Barra de Navegação - Footer --------------------------------------------- */
 
-#navBarFooter{
+#navBarFooter {
     width: 100%;
     height: 50px;
     background: var(--cor1);
@@ -1192,15 +1252,15 @@ input[type=number]::-webkit-inner-spin-button{
     justify-content: center;
 }
 
-#navFooterLinks{
+#navFooterLinks {
     display: flex;
 }
 
-.navLinkFooter{
+.navLinkFooter {
     padding: 0px 20px;
 }
 
-.navLinkFooter > a{
+.navLinkFooter>a {
     font-size: 12px;
     color: var(--cor5);
     font-weight: 300;
@@ -1208,11 +1268,11 @@ input[type=number]::-webkit-inner-spin-button{
     transition: all .5s ease-in-out;
 }
 
-.navLinkFooter > a:hover{
+.navLinkFooter>a:hover {
     color: #fff;
 }
 
-.navLinkFooter > a::after{
+.navLinkFooter>a::after {
     content: '';
     width: 100%;
     height: 1px;
@@ -1225,12 +1285,12 @@ input[type=number]::-webkit-inner-spin-button{
     transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-.navLinkFooter > a:hover::after{
+.navLinkFooter>a:hover::after {
     transform: scaleX(1);
-    transform-origin: left;     
+    transform-origin: left;
 }
 
-#footerAx{
+#footerAx {
     width: 100%;
     height: 200px;
     padding: 70px;
@@ -1240,13 +1300,13 @@ input[type=number]::-webkit-inner-spin-button{
     background: #3e3e3e;
 }
 
-#footerTxt{
+#footerTxt {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
-#footerTxt > a{
+#footerTxt>a {
     padding: 7px 30px;
     background: var(--cor1);
     color: #fff;
@@ -1255,111 +1315,117 @@ input[type=number]::-webkit-inner-spin-button{
     margin-bottom: 20px;
 }
 
-#footerTxt > p{
+#footerTxt>p {
     color: #fff;
     font-weight: 300;
 }
 
-#footerTxt > p > a{
+#footerTxt>p>a {
     color: #fff;
     transition: all .4s ease-in-out;
 }
 
-#footerTxt > p > a:hover{
-    color: var(--cor1);    
+#footerTxt>p>a:hover {
+    color: var(--cor1);
 }
 
-#footerAx > #redesSociais{
+#footerAx>#redesSociais {
     margin-right: 235px;
 }
 
-#footerAx > img{
+#footerAx>img {
     height: 90%;
 }
 
-/* Responsividade ------------------------------------------------------------- */
+/* Responsividade Menor que 1800 Pixels ------------------------------------ */
 
-@media(min-width: 1800px){
-    #sctFour{
+@media(min-width: 1800px) {
+    #sctFour {
         padding: 40px 200px 130px 200px;
     }
 
-    #sctSix{
+    #sctSix {
         padding: 110px 300px
     }
 }
 
-/* ----------------------Media 1300PX */
+/* Responsividade Menor que 1300 Pixels ------------------------------------ */
 
-@media(1300px >= width){
-    .imgSlide.one, .imgSlide.two, .imgSlide.three{
+@media(1300px >=width) {
+
+    .imgSlide.one,
+    .imgSlide.two,
+    .imgSlide.three {
         background-position: center;
         background-size: cover;
     }
 
-    #navBar{
+    #navBar {
         padding: 0 110px;
     }
 
-    .boasVindas h1{
+    .boasVindas h1 {
         font-size: 45px
     }
 
-    #sctThree{
+    #sctThree {
         height: 625px;
     }
 
-    .cardVtg{
+    .cardVtg {
         width: 260px;
         height: 331px;
         padding: 20px;
     }
 
-    .cardImg.se{
+    .cardImg.se {
         width: 50px;
         padding-bottom: 10px;
     }
-    .cardImg.eq{
+
+    .cardImg.eq {
         width: 37px;
     }
-    .cardImg.es{
+
+    .cardImg.es {
         width: 45px;
     }
-    .cardImg.ri{
+
+    .cardImg.ri {
         width: 48px;
         padding-bottom: 10px;
     }
 
-    .tituloVtg{
+    .tituloVtg {
         font-size: 20px;
     }
 
-    .descricaoVtg{
+    .descricaoVtg {
         font-size: 15px;
     }
 
-    #sctFour{
+    #sctFour {
         padding: 40px 10px 130px 10px;
     }
 
-    .svcBox{
+    .svcBox {
         width: 500px;
         height: 325px;
     }
 
-    .svcTitle{
+    .svcTitle {
         font-size: 24px;
     }
 
-    .svcDescricao{
+    .svcDescricao {
         font-size: 15px;
     }
 
-    #sctFive{
+    #sctFive {
         height: 850px;
     }
 
-    #empDescricao{
+    #empDescricao {
         justify-content: space-around;
     }
 
@@ -1368,62 +1434,64 @@ input[type=number]::-webkit-inner-spin-button{
     }
 }
 
-/* Media 1200PX ------------------------------------------ */
-@media(1200px >= width){
-    #navBar{
+/* Responsividade Menor que 1200 Pixels ------------------------------------ */
+
+@media(1200px >=width) {
+    #navBar {
         padding: 0 70px;
     }
 
-    #sctTwo{
+    #sctTwo {
         padding: 100px 50px;
     }
 
-    .cardVisao.est{
+    .cardVisao.est {
         padding-bottom: 30px;
     }
 
-    #sctThree{
+    #sctThree {
         padding: 60px 100px;
         height: max-content;
     }
 
-    #sctThree > section{
+    #sctThree>section {
         width: 100%;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
     }
 
-    .cardVtg{
+    .cardVtg {
         margin: 5px;
     }
 
-    .conector{
+    .conector {
         width: 50px;
     }
 
-    .conector.n{
+    .conector.n {
         display: none;
     }
-    
-    .conector.r{
+
+    .conector.r {
         bottom: -30px;
         right: 40%;
         transform: rotate(90deg);
     }
 
-    .svcCardDetalhes{
+    .svcCardDetalhes {
         width: 75%;
     }
 }
 
-/* Media 1000PX ------------------------------------------ */
-@media(1000px >= width){
-    #axLogo img{
+/* Responsividade Menor que 1000 Pixels ------------------------------------ */
+
+@media(1000px >=width) {
+    #axLogo img {
         margin-left: 25px;
     }
 
-    .toggleMenu{
+    .toggleMenu {
         width: 30px;
         height: 30px;
         background: url(assets/menu.svg);
@@ -1437,17 +1505,17 @@ input[type=number]::-webkit-inner-spin-button{
         z-index: 2;
     }
 
-    .toggleMenu.active{
+    .toggleMenu.active {
         background: url(assets/menuX.svg) no-repeat;
         cursor: pointer;
         background-size: cover;
     }
 
-    #navBar{
+    #navBar {
         padding: 0 20px;
     }
 
-    #navBarLinks{
+    #navBarLinks {
         position: absolute;
         transform: scale(0);
         transition: all .4s;
@@ -1461,15 +1529,15 @@ input[type=number]::-webkit-inner-spin-button{
         flex-direction: column;
         justify-content: center;
     }
-    
-    #navBarLinks.active{
+
+    #navBarLinks.active {
         display: flex;
         transform: scale(1);
         opacity: 1;
-        transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);  
+        transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 
-    #navBarLinks::after{
+    #navBarLinks::after {
         content: '';
         position: absolute;
         width: 20px;
@@ -1480,7 +1548,7 @@ input[type=number]::-webkit-inner-spin-button{
         right: 5px;
     }
 
-    .navLink{
+    .navLink {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1491,451 +1559,463 @@ input[type=number]::-webkit-inner-spin-button{
         border-bottom: 1px solid #eaeaea;
     }
 
-    .navLink:nth-child(6){
+    .navLink:nth-child(6) {
         border-bottom: 0;
     }
 
-    .navLink > a{
+    .navLink>a {
         background: linear-gradient(180deg, var(--cor2), var(--cor1));
         background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 400;
     }
 
-    #navBtn{
+    #navBtn {
         display: none;
     }
 
-    #sctOne{
+    #sctOne {
         align-items: center;
         justify-content: space-between;
         background-position: center;
         background-attachment: fixed;
     }
 
-    .imgSlide.one{
+    .imgSlide.one {
         background: url(assets/axBannerTb.png);
     }
-    
-    .imgSlide.two{
+
+    .imgSlide.two {
         background: url(assets/axBanner1Tb.jpg);
     }
 
-    .imgSlide.three{
+    .imgSlide.three {
         background: url(assets/axBanner2Tb.jpg);
     }
 
-    .imgSlide.four{
+    .imgSlide.four {
         background: url(assets/axBanner3Tb.jpg);
     }
 
-    .imgSlide.one, .imgSlide.two, .imgSlide.three, .imgSlide.four {
+    .imgSlide.one,
+    .imgSlide.two,
+    .imgSlide.three,
+    .imgSlide.four {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-        
-    .navigation-auto, .manual-navigation{
+
+    .navigation-auto,
+    .manual-navigation {
         display: none;
     }
 
-    .boasVindas{
+    .boasVindas {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
     }
 
-    .boasVindas h1{
+    .boasVindas h1 {
         font-size: 45px;
-    }  
-    
-    .boasVindas h3{
+    }
+
+    .boasVindas h3 {
         font-size: 15px;
     }
-    
-    .redesSociais{
+
+    .redesSociais {
         margin-bottom: 80px;
     }
 
-    #btnBv{
+    #btnBv {
         font-size: 14px;
         padding: 10px 20px;
     }
 
-    .cardVisao{
+    .cardVisao {
         padding-top: 60px;
-    }   
+    }
 
-    .cardVisao > img{
+    .cardVisao>img {
         width: 70px;
     }
 
-    .cardVisao.est{
+    .cardVisao.est {
         padding-bottom: 50px;
     }
 
-    .tituloCard{
+    .tituloCard {
         font-size: 20px;
     }
 
-    .descricaoCard{
+    .descricaoCard {
         font-size: 12px;
         padding: 0 20px;
     }
 
-    #sctFive{
+    #sctFive {
         padding: 0 80px;
         height: max-content;
     }
 
-    #empImg{
+    #empImg {
         display: none;
         display: none;
     }
 
-    #sctFive > section{
+    #sctFive>section {
         width: 100%;
     }
 
-    .empTxt:nth-child(1){
+    .empTxt:nth-child(1) {
         margin-top: 10px;
     }
 
-    #empRedesSociais{
+    #empRedesSociais {
         padding-top: 15px;
         margin: auto;
     }
 
-    #footerAx > img{
+    #footerAx>img {
         display: none;
     }
 
-    #footerAx > #redesSociais{
+    #footerAx>#redesSociais {
         margin-right: 0;
     }
 }
 
-/* Media 900PX --------------------------------------- */
+/* Responsividade Menor que 900 Pixels ------------------------------------- */
 
-@media(900px >= width){
-    #contato{
+@media(900px >=width) {
+    #contato {
         height: 500px;
     }
 
-    #dadosCtt{
+    #dadosCtt {
         padding: 40px 85px;
     }
 
-    .cttBfIcon{
+    .cttBfIcon {
         font-size: 17px;
     }
 
-    .fdCtt > p{
+    .fdCtt>p {
         font-size: 12px;
     }
 
-    #formCttBox{
+    #formCttBox {
         padding: 30px;
     }
-    
-    #formCtt > h4{
+
+    #formCtt>h4 {
         font-size: 16px;
     }
 
-    #formCtt > input, #formCtt > textarea{
+    #formCtt>input,
+    #formCtt>textarea {
         font-size: 12px;
     }
 
-    #formCtt > button{
+    #formCtt>button {
         font-size: 15px;
     }
 
 }
 
-/* Media 800PX ------------------------------------------- */
-@media(800px >= width){
+/* Responsividade Menor que 800 Pixels ------------------------------------- */
 
-    #infoOne h1{
+@media(800px >=width) {
+
+    #infoOne h1 {
         font-size: 15px;
     }
 
-    #infoOne span{
+    #infoOne span {
         font-size: 35px;
     }
 
-    #sctTwo{
+    #sctTwo {
         flex-wrap: wrap;
         height: max-content;
         background-size: cover;
         background-attachment: fixed;
     }
 
-    .cardVisao{
+    .cardVisao {
         padding: 20px 0;
     }
 
-    .cardVisao > img{
+    .cardVisao>img {
         width: 70px;
     }
 
-    .cardVisao.est{
+    .cardVisao.est {
         padding-bottom: 15px;
     }
 
-    .tituloCard{
+    .tituloCard {
         font-size: 16px;
         padding: 20px 0 10px 0;
     }
 
-    .descricaoCard{
+    .descricaoCard {
         font-size: 12px;
         padding: 0 20px;
     }
-    
-    #sctThree{
+
+    #sctThree {
         padding: 60px 40px;
         margin-top: 0;
     }
 
-    #sctFive{
+    #sctFive {
         padding: 0 60px;
     }
 
 }
 
-/* Media 700PX ------------------------------------------- */
-@media(700px >= width){
+/* Responsividade Menor que 700 Pixels ------------------------------------- */
 
-    .toggleMenu{
+@media(700px >=width) {
+
+    .toggleMenu {
         top: 53px;
     }
 
-    #axLogo img{
+    #axLogo img {
         height: 80%;
     }
-    
-    .boasVindas h1{
+
+    .boasVindas h1 {
         font-size: 35px;
         text-align: center;
-    }  
-    
-    .boasVindas h3{
+    }
+
+    .boasVindas h3 {
         font-size: 12.5px;
         text-align: center;
         margin-top: 20px;
     }
-    
-    #btnBv{
+
+    #btnBv {
         font-size: 12px;
         padding: 10px 20px;
     }
 
-    #infoOne{
+    #infoOne {
         height: 150px;
     }
 
-    .descricaoCard{
+    .descricaoCard {
         padding: 0 40px;
     }
 
-    .tituloVtg{
+    .tituloVtg {
         padding: 20px 0 22px 0;
     }
-    
-    .descricaoVtg{
+
+    .descricaoVtg {
         padding-right: 20px;
     }
 
-    .sctsTitle{
+    .sctsTitle {
         font-size: 20px;
     }
 
-    .info{
-        height: 170px;  
+    .info {
+        height: 170px;
     }
 
-    .info > a{
-        font-size: 20px;   
-        padding: 20px 100px;  
+    .info>a {
+        font-size: 20px;
+        padding: 20px 100px;
     }
 
-    #pdtDescricao{
+    #pdtDescricao {
         font-size: 13px;
     }
 
-    .infoRsTitle{
+    .infoRsTitle {
         font-size: 38px;
     }
-    
-    .infoRsDescricao{
+
+    .infoRsDescricao {
         font-size: 13px;
     }
 
-    #footerTxt > a{
+    #footerTxt>a {
         font-size: 12px;
     }
 
-    #footerTxt > p{
+    #footerTxt>p {
         font-size: 13px;
     }
 }
 
-/* Media 620PX ------------------------------------------- */
-@media(620px >= width){
-    .boasVindas h1{
+/* Responsividade Menor que 620 Pixels ------------------------------------- */
+
+@media(620px >=width) {
+    .boasVindas h1 {
         width: 100%;
     }
 
-    .imgSlide.one{
+    .imgSlide.one {
         background: url(assets/axBannerPhone.png);
     }
-    
-    .imgSlide.two{
+
+    .imgSlide.two {
         background: url(assets/axBanner1Phone.jpg);
     }
 
-    .imgSlide.three{
+    .imgSlide.three {
         background: url(assets/axBanner2Phone.jpg);
     }
 
-    .imgSlide.four{
+    .imgSlide.four {
         background: url(assets/axBanner3Phone.jpg);
     }
 
-    .imgSlide.one, .imgSlide.two, .imgSlide.three, .imgSlide.four {
+    .imgSlide.one,
+    .imgSlide.two,
+    .imgSlide.three,
+    .imgSlide.four {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
 
-    .conector.n{
+    .conector.n {
         display: block;
     }
 
-    #sctFour{
+    #sctFour {
         padding: 40px 0 80px 0;
     }
 
-    .sctsTitle.one{
+    .sctsTitle.one {
         padding-left: 10px;
     }
 
-    #servicos{
+    #servicos {
         width: 100%;
     }
 
-    .svcBox{
+    .svcBox {
         width: 450px;
         height: 293px;
-    }  
+    }
 
-    .svcInfos{
+    .svcInfos {
         padding: 20px 15px;
     }
-    
-    .svcTitle{
+
+    .svcTitle {
         font-size: 20px;
     }
 
-    .svcDescricao{
+    .svcDescricao {
         font-size: 12px;
     }
 
-    .svcBtn{
+    .svcBtn {
         font-size: 11px;
         height: 35px;
     }
 
-    .info{
-        height: 150px;  
+    .info {
+        height: 150px;
     }
 
-    .info > a{
-        font-size: 15px;   
-        padding: 15px 60px;  
+    .info>a {
+        font-size: 15px;
+        padding: 15px 60px;
     }
 
-    #sctFive{
+    #sctFive {
         padding: 0 5px;
     }
 
-    #empDescricao{
+    #empDescricao {
         padding: 35px;
     }
 
-    .empTxt{
+    .empTxt {
         font-size: 14px;
         padding: 5px 0;
     }
 
-    .sctsTitle.one::after{
+    .sctsTitle.one::after {
         left: 8px;
     }
 
-    .sctsTitle.two{
+    .sctsTitle.two {
         font-size: 18px;
     }
 
-    #sctSix{
+    #sctSix {
         padding: 110px 38px 50px 38px;
     }
 
-    
-    #infoContato{
+
+    #infoContato {
         height: 120px;
     }
 
-    #contato{
+    #contato {
         height: max-content;
         flex-direction: column;
     }
 
-    #contato > section{
+    #contato>section {
         width: 100%;
     }
 
-    #dadosCtt{
+    #dadosCtt {
         padding: 40px 85px 10px 85px;
     }
 
-    .cttBfIcon{
+    .cttBfIcon {
         font-size: 17px;
     }
 
-    .fdCtt{
+    .fdCtt {
         margin-bottom: 30px;
     }
 
-    .fdCtt > p{
+    .fdCtt>p {
         font-size: 12px;
     }
-    
-    #formCttBox{
+
+    #formCttBox {
         border: 0;
     }
 
-    #formCtt > h4{
+    #formCtt>h4 {
         margin-bottom: 10px;
     }
 
-    #formCtt > input, #formCtt > textarea{
+    #formCtt>input,
+    #formCtt>textarea {
         font-size: 13px;
         margin-top: 10px;
     }
 
-    #formCtt > button{
+    #formCtt>button {
         font-size: 15px;
         margin-top: 20px;
     }
 
-    #mapaAx{
+    #mapaAx {
         height: 450px;
     }
 
-    .toggleFooter{
+    .toggleFooter {
         width: 25px;
         height: 25px;
         position: absolute;
@@ -1946,16 +2026,16 @@ input[type=number]::-webkit-inner-spin-button{
         z-index: 2;
     }
 
-    .toggleFooter.active{
+    .toggleFooter.active {
         background: url(assets/menuX.svg);
         background-size: cover;
         cursor: pointer;
     }
 
-    #navFooterLinks{
+    #navFooterLinks {
         transform: scale(0);
         opacity: 0;
-        position: absolute; 
+        position: absolute;
         background: var(--cor3);
         flex-direction: column;
         align-items: center;
@@ -1967,8 +2047,8 @@ input[type=number]::-webkit-inner-spin-button{
         transition: all .4s;
     }
 
-    
-    #navFooterLinks::after{
+
+    #navFooterLinks::after {
         content: '';
         position: absolute;
         width: 15px;
@@ -1979,7 +2059,7 @@ input[type=number]::-webkit-inner-spin-button{
         right: auto;
     }
 
-    .navLinkFooter{
+    .navLinkFooter {
         width: 100%;
         height: 100%;
         display: flex;
@@ -1988,72 +2068,76 @@ input[type=number]::-webkit-inner-spin-button{
         border-bottom: 1px solid #474747
     }
 
-    .navLinkFooter:nth-child(6){
+    .navLinkFooter:nth-child(6) {
         border-bottom: 0;
     }
 
-    .navLinkFooter > a{
+    .navLinkFooter>a {
         color: #f6f6f6;
         font-weight: 300;
     }
 
-    #navFooterLinks.active{
+    #navFooterLinks.active {
         display: flex;
         transform: scale(1);
         opacity: 1;
-        transition: opacity 1s; 
+        transition: opacity 1s;
     }
 
-    #footerAx{
+    #footerAx {
         padding: 55px;
         flex-direction: column;
         justify-content: center;
     }
 
-    #footerTxt{
+    #footerTxt {
         text-align: center;
         align-items: center;
     }
 
-    #footerAx > #redesSociais{
+    #footerAx>#redesSociais {
         margin: 20px;
     }
 
-    .svcCardDetalhes, #tpEvt, .pdtCardDetalhes{
+    .svcCardDetalhes,
+    #tpEvt,
+    .pdtCardDetalhes {
         width: 100%;
         top: 0;
         left: 0;
         height: 100%;
     }
-}   
+}
 
-/* Media 400PX ------------------------------------------- */
-@media(400px >= width){
-    
-    #infoOne h1{
+/* Responsividade Menor que 400 Pixels ------------------------------------- */
+
+@media(400px >=width) {
+
+    #infoOne h1 {
         font-size: 13px;
     }
 
-    #infoOne span{
+    #infoOne span {
         font-size: 28px;
     }
 
-    .svcTitle{
+    .svcTitle {
         font-size: 19px;
     }
 
-    #infoContato > .infoRsTitle{
+    #infoContato>.infoRsTitle {
         font-size: 34px;
     }
-    
-    #footerTxt > p{
+
+    #footerTxt>p {
         font-size: 12px;
     }
-}   
+}
 
-/* Media 330PX ------------------------------------------- */
-@media(330px >= width){
-    #infoOne h1{
+/* Responsividade Menor que 330 Pixels ------------------------------------- */
+
+@media(330px >=width) {
+    #infoOne h1 {
         font-size: 20px;
     }
-}   
+}
