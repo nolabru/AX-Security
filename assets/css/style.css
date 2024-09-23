@@ -388,7 +388,7 @@ body.active {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(150deg, #175d99, #051421);
+    background: linear-gradient(150deg, #08548A, #051421);
 }
 
 /* Cards Visão -------------------------------------- */
@@ -998,9 +998,9 @@ body.active {
 /* Faixa Informações Três -------------------------------------------------- */
 
 .info.three {
-    background: url(assets/infoThreeBg.png);
+    background: linear-gradient(90deg, #051421cd, #2974bac1), 
+    url(assets/infoTwoBg.png);
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
 }
 
