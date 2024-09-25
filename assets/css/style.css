@@ -689,6 +689,7 @@ body.active {
     width: 592px;
     height: 387px;
     display: flex;
+
 }
 
 .svcBox section {
@@ -1081,7 +1082,7 @@ body.active {
 /* Seção Oito - Instagram -------------------------------------------------- */
 
 #instagram {
-    width: 100%;
+    width: 100%;            
 }
 
 /* Seção Nove - Contato ---------------------------------------------------- */
