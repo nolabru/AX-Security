@@ -586,7 +586,7 @@ body.active {
     -webkit-text-fill-color: transparent;
 }
 
-.svcCardDetalhes>p {
+.svcCardDetalhes p {
     font-size: 14px;
     color: #787D85;
     margin-top: 10px;
@@ -702,7 +702,7 @@ body.active {
 }
 
 .svcImg.ala {
-    background: url(assets/alaImg.png);
+    background: url(assets/alaImg.jpg);
 }
 
 .svcImg.cer {
@@ -735,6 +735,17 @@ body.active {
     flex-direction: column;
     justify-content: space-between;
     background: #fff;
+}
+
+.svcInfos.cam>div {
+    font-size: 14px;
+    padding: 10px;
+    width: 50%;
+    position: relative;
+    background: #cd3a3a;
+    border-radius: 0 20px 20px 0;
+    color: #fff;
+    font-weight: bolder;
 }
 
 .svcTitle {
@@ -1603,7 +1614,7 @@ input[type=number]::-webkit-inner-spin-button {
         display: none;
     }
 
-    
+
     .boasVindas {
         width: 100%;
         padding: 0 20px;
@@ -2113,6 +2124,13 @@ input[type=number]::-webkit-inner-spin-button {
 
     .svcTitle {
         font-size: 19px;
+    }
+
+
+    .svcInfos.cam>div {
+        font-size: 12px;
+        width: 70%;
+        padding: 2px 0 2px 10px;
     }
 
     #infoContato>.infoRsTitle {

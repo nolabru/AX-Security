@@ -23,7 +23,7 @@ function blockBody() {
 }
 function segDt() {
     const detalheBox = document.querySelector('.svcDetalhes');
-    const toggleDetalhes = document.querySelector('.toggleDetalhes');
+    const toggleDetalhes = document.querySelector('.toggleDetalhes');   
     blockBody();
     detalheBox.classList.add('active');
     toggleDetalhes.addEventListener('click', back);
