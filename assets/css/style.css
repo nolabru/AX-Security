@@ -698,7 +698,7 @@ body.active {
 }
 
 .svcImg.seg {
-    background: url(assets/segImg.png);
+    background: url(assets/segImg.jpg);
 }
 
 .svcImg.ala {
@@ -706,27 +706,27 @@ body.active {
 }
 
 .svcImg.cer {
-    background: url(assets/cerImg.png);
+    background: url(assets/cerImg.jpg);
 }
 
 .svcImg.ist {
-    background: url(assets/istImg.png);
+    background: url(assets/istImg.jpg);
 }
 
 .svcImg.acs {
-    background: url(assets/acsImg.png);
+    background: url(assets/acsImg.jpg);
 }
 
 .svcImg.evt {
-    background: url(assets/evtImg.png);
+    background: url(assets/ctmImg.jpg);
 }
 
 .svcImg.axc {
-    background: url(assets/axcImg.png);
+    background: url(assets/axcImg.jpg);
 }
 
 .svcImg.cam {
-    background: url(assets/camImg.png);
+    background: url(assets/camImg.jpg);
 }
 
 .svcInfos {
