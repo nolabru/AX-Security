@@ -1,9 +1,9 @@
 @import url(global.css);
 
-body.active {
+/* body.active {
     overflow-y: hidden;
-}
-
+} */
+    
 /* Elementos Fixos --------------------------------------------------------- */
 
 .btnFixed {
