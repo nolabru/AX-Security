@@ -738,14 +738,27 @@ body.active {
 }
 
 .svcInfos.cam>div {
-    font-size: 14px;
+    font-size: 18px;
     padding: 10px;
-    width: 50%;
+    width: 100%;
     position: relative;
-    background: #cd3a3a;
-    border-radius: 0 20px 20px 0;
+    background: linear-gradient(45deg, #af3131, #da1c1c);
+    border-radius: 10px;
     color: #fff;
     font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: atencao 1.5s alternate infinite;
+}
+
+@keyframes atencao {
+    for{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.02);
+    }
 }
 
 .svcTitle {
@@ -968,7 +981,7 @@ body.active {
 
 .pdtCardDetalhes>p {
     color: #787D85;
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: justify;
     padding-right: 20px;
     font-weight: 300;
@@ -1347,7 +1360,7 @@ input[type=number]::-webkit-inner-spin-button {
     }
 
     #sctSix {
-        padding: 110px 300px
+        padding: 110px 90px
     }
 }
 
