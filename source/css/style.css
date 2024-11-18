@@ -78,7 +78,7 @@
 }
 
 .imgSlide.one {
-    background: url(source/bannerAx.png);
+    background: url(source/bannerAx.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -340,7 +340,7 @@
 #infoOne {
     width: 100%;
     height: 220px;
-    background: linear-gradient(155deg, #23262d2d, #23262d9f), url(source/infoTwoBg.png);
+    background: linear-gradient(155deg, #23262d2d, #23262d9f), url(source/infoTwoBg.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -858,7 +858,7 @@
 }
 
 #empImg {
-    background: url(source/axBanner.png);
+    background: url(source/axBanner.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -1013,7 +1013,7 @@
 
 .info.three {
     background: linear-gradient(90deg, #051421cd, #2974bac1),
-        url(source/infoTwoBg.png);
+        url(source/infoTwoBg.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -1136,7 +1136,7 @@
 }
 
 #dadosCtt {
-    background: url(source/cttBg.png);
+    background: url(source/cttBg.jpg);
     background-size: cover;
     background-position: center;
     padding: 100px 85px;
@@ -1596,7 +1596,7 @@ input[type=number]::-webkit-inner-spin-button {
     }
 
     .imgSlide.one {
-        background: url(source/axBannerTb.png);
+        background: url(source/axBannerTb.jpg);
     }
 
     .imgSlide.two {
@@ -1878,7 +1878,7 @@ input[type=number]::-webkit-inner-spin-button {
     }
 
     .imgSlide.one {
-        background: url(source/axBannerPhone.png);
+        background: url(source/axBannerPhone.jpg);
     }
 
     .imgSlide.two {
